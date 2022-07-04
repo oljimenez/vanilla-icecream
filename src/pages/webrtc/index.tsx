@@ -50,11 +50,11 @@ const Home: NextPage = () => {
       }
     })();
 
-    return () => {
-      if (peer) {
-        peer.disconnect();
-      }
-    };
+    // return () => {
+    //   if (peer) {
+    //     peer.disconnect();
+    //   }
+    // };
   }, [peer]);
 
   const call = async (remotePeerId: string) => {
