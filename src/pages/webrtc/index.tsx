@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         peer.on("call", async (call: MediaConnection) => {
           const mediaStream = await navigator.mediaDevices.getUserMedia({
             video: true,
-            // audio: true,
+            audio: true,
           });
 
           if (currentUserVideoRef.current) {
@@ -59,7 +59,6 @@ const Home: NextPage = () => {
   const call = async (remotePeerId: string) => {
     const mediaStream = await navigator.mediaDevices.getUserMedia({
       video: true,
-      audio: true,
     });
 
     if (currentUserVideoRef.current) {
