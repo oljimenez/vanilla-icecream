@@ -18,14 +18,13 @@ const Home: NextPage = () => {
 
       if (peer) {
         peer.on("open", (id: string) => {
-          console.log(id);
           setPeerId(id);
         });
 
         peer.on("call", async (call: MediaConnection) => {
           const mediaStream = await navigator.mediaDevices.getUserMedia({
             video: true,
-            audio: true,
+            // audio: true,
           });
 
           if (currentUserVideoRef.current) {
