@@ -9,6 +9,7 @@ const Home: NextPage = () => {
   const remoteVideoRef = useRef<HTMLVideoElement | null>(null);
   const currentUserVideoRef = useRef<HTMLVideoElement | null>(null);
   const peerInstance = useRef<Peer | null>(null);
+  const [haveMediaDevices, setHaveMediaDevices] = useState<boolean>(false);
 
   useEffect(() => {
     (async () => {
@@ -57,6 +58,9 @@ const Home: NextPage = () => {
   }, [peer]);
 
   const call = async (remotePeerId: string) => {
+    if (navigator.mediaDevices) {
+      setHaveMediaDevices(true);
+    }
     const mediaStream = await navigator.mediaDevices.getUserMedia({
       video: true,
     });
@@ -95,6 +99,7 @@ const Home: NextPage = () => {
   return (
     <div className="App">
       <h1>Current user id is {peerId}</h1>
+      <h1>{`Media devices ${haveMediaDevices}`}</h1>
       <input
         type="text"
         value={remotePeerIdValue ? remotePeerIdValue : ""}
