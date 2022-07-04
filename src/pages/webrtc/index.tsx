@@ -24,6 +24,9 @@ const Home: NextPage = () => {
         });
 
         peer.on("call", async (call: MediaConnection) => {
+          if (navigator.mediaDevices) {
+            setHaveMediaDevices(true);
+          }
           const mediaStream = await navigator.mediaDevices.getUserMedia({
             video: true,
             audio: true,
