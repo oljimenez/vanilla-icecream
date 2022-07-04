@@ -38,6 +38,11 @@ const Home: NextPage = () => {
                 remoteVideoRef.current.play();
               }
             });
+            call.on("close", () => {
+              if (remoteVideoRef.current) {
+                remoteVideoRef.current.srcObject = null;
+              }
+            });
           }
         });
 
