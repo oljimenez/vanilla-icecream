@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import Peer, { MediaConnection } from "peerjs";
 
 const Home: NextPage = () => {
+  const [peer, setPeer] = useState<Peer>();
   const [peerId, setPeerId] = useState<string>();
   const [remotePeerIdValue, setRemotePeerIdValue] = useState<string>();
   const remoteVideoRef = useRef<HTMLVideoElement | null>(null);
@@ -11,9 +12,11 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     (async () => {
-      if (typeof window !== "undefined") {
-        const peer: Peer = new (await import("peerjs")).Peer();
+      if (!peer) {
+        setPeer(new (await import("peerjs")).Peer());
+      }
 
+      if (peer) {
         peer.on("open", (id: string) => {
           console.log(id);
           setPeerId(id);
@@ -41,11 +44,16 @@ const Home: NextPage = () => {
         peerInstance.current = peer;
       }
     })();
-  }, []);
+
+    return () => {
+      if (peer) {
+        peer.disconnect();
+      }
+    };
+  }, [peer]);
 
   const call = async (remotePeerId: string) => {
     const mediaStream = await navigator.mediaDevices.getUserMedia({
-      audio: true,
       video: true,
     });
 
@@ -54,14 +62,16 @@ const Home: NextPage = () => {
       await currentUserVideoRef.current.play();
 
       if (peerInstance.current) {
-        const call = peerInstance.current.call(remotePeerId, mediaStream);
+        const call = await peerInstance.current.call(remotePeerId, mediaStream);
 
-        call.on("stream", (remoteStream: MediaStream) => {
-          if (remoteVideoRef.current) {
-            remoteVideoRef.current.srcObject = remoteStream;
-            remoteVideoRef.current.play();
-          }
-        });
+        if (call) {
+          call.on("stream", (remoteStream: MediaStream) => {
+            if (remoteVideoRef.current) {
+              remoteVideoRef.current.srcObject = remoteStream;
+              remoteVideoRef.current.play();
+            }
+          });
+        }
       }
     }
   };
