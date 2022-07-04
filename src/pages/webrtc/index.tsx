@@ -60,6 +60,7 @@ const Home: NextPage = () => {
   const call = async (remotePeerId: string) => {
     const mediaStream = await navigator.mediaDevices.getUserMedia({
       video: true,
+      audio: true,
     });
 
     if (currentUserVideoRef.current) {
