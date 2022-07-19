@@ -79,8 +79,9 @@ const Home: NextPage = () => {
         const call = await peerInstance.current.call(remotePeerId, mediaStream);
 
         if (call) {
-          console.log("start video call 1");
+          console.log("start video call 1", call);
           call.on("stream", (remoteStream: MediaStream) => {
+            console.log(remoteStream);
             if (remoteVideoRef.current) {
               remoteVideoRef.current.srcObject = remoteStream;
               remoteVideoRef.current.play();
