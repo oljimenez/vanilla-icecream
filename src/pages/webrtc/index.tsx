@@ -70,6 +70,7 @@ const Home: NextPage = () => {
     }
     const mediaStream = await navigator.mediaDevices.getUserMedia({
       video: true,
+      audio: false,
     });
 
     if (currentUserVideoRef.current) {
@@ -80,9 +81,7 @@ const Home: NextPage = () => {
         const call = await peerInstance.current.call(remotePeerId, mediaStream);
 
         if (call) {
-          console.log("start video call 1", call);
           call.on("stream", (remoteStream: MediaStream) => {
-            console.log(remoteStream);
             if (remoteVideoRef.current) {
               remoteVideoRef.current.srcObject = remoteStream;
               remoteVideoRef.current.play();
@@ -127,14 +126,30 @@ const Home: NextPage = () => {
       >
         Call
       </button>
-      <div>
-        <video ref={currentUserVideoRef} />
+      <div style={{ display: "flex", gap: "1rem", padding: "1rem" }}>
+        <div
+          style={{
+            width: "20rem",
+            height: "20rem",
+            backgroundColor: "red",
+            textAlign: "center",
+          }}
+        >
+          <span>Me</span>
+          <video width={"100%"} height={"100%"} ref={currentUserVideoRef} />
+        </div>
+        <div
+          style={{
+            width: "20rem",
+            height: "20rem",
+            backgroundColor: "blue",
+            textAlign: "center",
+          }}
+        >
+          <span>Other</span>
+          <video width={"100%"} height={"100%"} ref={remoteVideoRef} />
+        </div>
       </div>
-      <div>
-        <video ref={remoteVideoRef} />
-      </div>
-      <button onClick={onPlayVideo}>play</button>
-      <button onClick={onPauseVideo}>pause</button>
     </Box>
   );
 };
