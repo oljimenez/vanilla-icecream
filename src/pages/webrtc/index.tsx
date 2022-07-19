@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { useEffect, useRef, useState } from "react";
 import Peer, { MediaConnection } from "peerjs";
+import { Box } from "components/box";
 
 const Home: NextPage = () => {
   const [peer, setPeer] = useState<Peer>();
@@ -40,11 +41,13 @@ const Home: NextPage = () => {
               if (remoteVideoRef.current) {
                 remoteVideoRef.current.srcObject = remoteStream;
                 remoteVideoRef.current.play();
+                console.log("receive video call target");
               }
             });
             call.on("close", () => {
               if (remoteVideoRef.current) {
                 remoteVideoRef.current.srcObject = null;
+                console.log("close video call target");
               }
             });
           }
@@ -77,10 +80,12 @@ const Home: NextPage = () => {
         const call = await peerInstance.current.call(remotePeerId, mediaStream);
 
         if (call) {
+          console.log("start video call 1");
           call.on("stream", (remoteStream: MediaStream) => {
             if (remoteVideoRef.current) {
               remoteVideoRef.current.srcObject = remoteStream;
               remoteVideoRef.current.play();
+              console.log("start video call 2");
             }
           });
         }
@@ -101,7 +106,12 @@ const Home: NextPage = () => {
   }
 
   return (
-    <div className="App">
+    <Box
+      height={"100%"}
+      display={"flex"}
+      flexDirection={"column"}
+      placeItems={"center"}
+    >
       <h1>Current user id is {peerId}</h1>
       <h1>{`Media devices ${haveMediaDevices}`}</h1>
       <input
@@ -124,7 +134,7 @@ const Home: NextPage = () => {
       </div>
       <button onClick={onPlayVideo}>play</button>
       <button onClick={onPauseVideo}>pause</button>
-    </div>
+    </Box>
   );
 };
 

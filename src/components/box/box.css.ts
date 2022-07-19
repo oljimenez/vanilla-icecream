@@ -1,5 +1,4 @@
-import { sprinkles, vars } from "theme";
-import { style, styleVariants } from "@vanilla-extract/css";
+import { sprinkles } from "theme";
 
 export const boxCss = sprinkles({
   display: "flex",
@@ -13,12 +12,3 @@ export const boxCss = sprinkles({
     darkMode: "white",
   },
 });
-
-export const base = style({
-  display: "flex",
-  padding: "10px",
-});
-
-export const color = styleVariants(vars.color, (value) => ({
-  background: value,
-}));

@@ -18,8 +18,8 @@ const responsiveProperties = defineProperties({
     paddingBottom: vars.space,
     paddingLeft: vars.space,
     paddingRight: vars.space,
-    width: ["100vw", "90vw"],
-    height: ["100vh", "90vh"],
+    width: ["100%", "100vw", "90vw"],
+    height: ["100%", "100vh", "90vh"],
     borderRadius: vars.borderRadius,
     fontFamily: vars.fontFamily,
     fontSize: vars.fontSize,
@@ -27,6 +27,7 @@ const responsiveProperties = defineProperties({
     textAlign: ["center"],
   },
   shorthands: {
+    itemSize: ["height", "width"],
     padding: ["paddingTop", "paddingBottom", "paddingLeft", "paddingRight"],
     paddingX: ["paddingLeft", "paddingRight"],
     paddingY: ["paddingTop", "paddingBottom"],
