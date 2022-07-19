@@ -8,6 +8,19 @@ const Home: NextPage = () => {
   async function goToWebRTC() {
     await router.push("/webrtc");
   }
+
+  async function goToVanillaExtract() {
+    await router.push("/vanilla");
+  }
+
+  async function goToMagnify() {
+    await router.push("/magnify");
+  }
+
+  async function goToInternalization() {
+    await router.push("/internalization");
+  }
+
   return (
     <Box
       width={"90vw"}
@@ -17,6 +30,9 @@ const Home: NextPage = () => {
       alignItems={"center"}
     >
       <button onClick={goToWebRTC}>WebRTC</button>
+      <button onClick={goToVanillaExtract}>Vanilla Extract</button>
+      <button onClick={goToMagnify}>Magnify</button>
+      <button onClick={goToInternalization}>Internalization</button>
     </Box>
   );
 };

@@ -1,13 +1,8 @@
 import type { AppProps } from "next/app";
-import { RTCProvider } from "context/RTCContext";
-import "theme/App.css";
+import "theme/global.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <RTCProvider>
-      <Component {...pageProps} />
-    </RTCProvider>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;

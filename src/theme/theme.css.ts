@@ -18,10 +18,12 @@ export const vars = createGlobalTheme(":root", {
   space: {
     none: "0",
     ...breakpointValues,
+    "1rem": "1rem",
   },
   color: {
     white: "#fff",
     black: "#000",
+    red: "#ff0000",
   },
   borderRadius: breakpointValues,
   fontFamily: {
