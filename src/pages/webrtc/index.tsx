@@ -43,13 +43,17 @@ const Home: NextPage = () => {
         <h1>Current user id is {peerId}</h1>
         <button onClick={onCopyId}>copy</button>
         <Box gap={"1rem"} display={"flex"} padding={"1rem"}>
-          <Box itemSize={"20rem"} background={"red"} textAlign={"center"}>
+          <Box>
             <span>Me</span>
-            <video width={"100%"} height={"100%"} ref={currentUserVideoRef} />
+            <Box itemSize={"20rem"} background={"red"} textAlign={"center"}>
+              <video width={"100%"} height={"100%"} ref={currentUserVideoRef} />
+            </Box>
           </Box>
-          <Box itemSize={"20rem"} background={"blue"} textAlign={"center"}>
+          <Box>
             <span>Other</span>
-            <video width={"100%"} height={"100%"} ref={remoteVideoRef} />
+            <Box itemSize={"20rem"} background={"blue"} textAlign={"center"}>
+              <video width={"100%"} height={"100%"} ref={remoteVideoRef} />
+            </Box>
           </Box>
         </Box>
         <Box gap={"xl"} display={"flex"}>
