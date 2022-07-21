@@ -32,7 +32,7 @@ export const useWebRtc = () => {
       if (navigator && localVideoRef.current) {
         const mediaStream = await navigator.mediaDevices.getUserMedia({
           video: true,
-          // audio: true,
+          audio: false,
         });
         localVideoRef.current.srcObject = mediaStream;
         await localVideoRef.current.play();
@@ -54,7 +54,7 @@ export const useWebRtc = () => {
       // setError(JSON.stringify({ navigator: navigator }));
       const mediaStream = await navigator.mediaDevices.getUserMedia({
         video: true,
-        audio: true,
+        audio: false,
       });
 
       localVideoRef.current.srcObject = mediaStream;
