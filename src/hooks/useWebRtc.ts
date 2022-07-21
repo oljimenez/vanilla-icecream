@@ -69,7 +69,7 @@ export const useWebRtc = () => {
   };
 
   const onAnswerCall = async () => {
-    setExample(!!(currentCall.call && localVideoRef.current));
+    setExample(!!currentCall.call && !!localVideoRef.current);
     console.log(!!currentCall.call);
     if (localVideoRef.current && currentCall.call) {
       const localMediaStream = await navigator.mediaDevices.getUserMedia({
@@ -109,7 +109,7 @@ export const useWebRtc = () => {
   useEffect(() => {
     (async () => {
       if (!peer) {
-        setPeer(new (await import("peerjs")).Peer({ debug: 1 }));
+        setPeer(new (await import("peerjs")).Peer());
       }
 
       if (peer) {
