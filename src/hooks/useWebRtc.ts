@@ -72,25 +72,23 @@ export const useWebRtc = () => {
   const onAnswerCall = async () => {
     if (localVideoRef.current && currentCall.call) {
       setExample(true);
-      try {
-        const localMediaStream = await navigator.mediaDevices.getUserMedia({
-          video: true,
-          audio: true,
-        });
 
-        const remoteMediaStream = await navigator.mediaDevices.getUserMedia({
-          video: currentCall.isVideo,
-          audio: currentCall.isAudio,
-        });
+      setError(JSON.stringify(navigator.mediaDevices, null, 2));
+      const localMediaStream = await navigator.mediaDevices.getUserMedia({
+        video: true,
+        audio: true,
+      });
 
-        localVideoRef.current.srcObject = localMediaStream;
-        await localVideoRef.current.play();
-        localVideoRef.current.muted = true;
-        currentCall.call.answer(remoteMediaStream);
-        setCurrentCall((prevState) => ({ ...prevState, isAnswered: true }));
-      } catch (e) {
-        setError(JSON.stringify(e, null, 2));
-      }
+      const remoteMediaStream = await navigator.mediaDevices.getUserMedia({
+        video: currentCall.isVideo,
+        audio: currentCall.isAudio,
+      });
+
+      localVideoRef.current.srcObject = localMediaStream;
+      await localVideoRef.current.play();
+      localVideoRef.current.muted = true;
+      currentCall.call.answer(remoteMediaStream);
+      setCurrentCall((prevState) => ({ ...prevState, isAnswered: true }));
     }
   };
 
