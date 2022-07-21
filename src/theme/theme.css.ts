@@ -14,6 +14,20 @@ const breakpointValues = {
 };
 //{ base: '4px', sm: '8px', md: '16px', lg: '32px', xl: '64px' }
 
+const widthVars = {
+  "100%": "100%",
+  "100vw": "100vw",
+  "90vw": "90vw",
+  "20rem": "20rem",
+};
+
+const heightVars = {
+  "100%": "100%",
+  "100vh": "100vh",
+  "90vh": "90vh",
+  "20rem": "20rem",
+};
+
 export const vars = createGlobalTheme(":root", {
   space: {
     none: "0",
@@ -24,11 +38,17 @@ export const vars = createGlobalTheme(":root", {
     white: "#fff",
     black: "#000",
     red: "#ff0000",
+    blue: "#0000ff",
   },
-  borderRadius: breakpointValues,
+  borderRadius: {
+    ...breakpointValues,
+    "50%": "50%",
+  },
   fontFamily: {
     body: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
   },
   fontSize: breakpointValues,
   lineHeight: breakpointValues,
+  width: widthVars,
+  height: heightVars,
 });
