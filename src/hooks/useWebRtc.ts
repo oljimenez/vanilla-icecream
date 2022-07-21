@@ -30,14 +30,14 @@ export const useWebRtc = () => {
   useEffect(() => {
     (async () => {
       if (navigator) {
-        const media = await navigator.mediaDevices.getUserMedia({
-          video: true,
+        const mediaStream = await navigator.mediaDevices.getUserMedia({
+          video: { facingMode: "user" },
           audio: true,
         });
 
         setError(
           JSON.stringify({
-            navigator: JSON.stringify(media.active),
+            navigator: JSON.stringify(mediaStream.active),
           })
         );
         setExample(true);
