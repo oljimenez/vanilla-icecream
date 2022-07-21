@@ -21,6 +21,9 @@ const Home: NextPage = () => {
     error,
   } = useWebRtc();
 
+  const onCopyId = async () => {
+    if (peerId) await navigator.clipboard.writeText(peerId);
+  };
   return (
     <Box>
       <Box padding={"lg"}>
@@ -40,6 +43,7 @@ const Home: NextPage = () => {
         gap={"1rem"}
       >
         <h1>Current user id is {peerId}</h1>
+        <button onClick={onCopyId}>copy</button>
         <Box gap={"1rem"} display={"flex"} padding={"1rem"}>
           <Box itemSize={"20rem"} background={"red"} textAlign={"center"}>
             <span>Me</span>
