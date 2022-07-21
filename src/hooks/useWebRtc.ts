@@ -31,11 +31,12 @@ export const useWebRtc = () => {
     const remoteId = remotePeerIdValue ?? remotePeerId;
     if (remoteId && localVideoRef.current) {
       setLoadingStart(true);
+      setError(JSON.stringify({ navigator: navigator }));
       const mediaStream = await navigator.mediaDevices.getUserMedia({
         video: true,
         audio: true,
       });
-      setError(JSON.stringify({ hola: true }));
+
       localVideoRef.current.srcObject = mediaStream;
       await localVideoRef.current.play();
       localVideoRef.current.muted = true;
