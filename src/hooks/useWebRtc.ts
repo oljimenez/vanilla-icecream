@@ -24,6 +24,25 @@ export const useWebRtc = () => {
   const localVideoRef = useRef<HTMLVideoElement | null>(null);
   const remoteVideoRef = useRef<HTMLVideoElement | null>(null);
 
+  useEffect(() => {
+    (async () => {
+      if (localVideoRef.current) {
+        // @ts-ignore
+        await navigator.permissions.query({ name: "microphone" });
+        // @ts-ignore
+        await navigator.permissions.query({ name: "camera" });
+        const localMediaStream = await navigator.mediaDevices.getUserMedia({
+          video: true,
+          audio: true,
+        });
+
+        localVideoRef.current.srcObject = localMediaStream;
+
+        await localVideoRef.current.play();
+      }
+    })();
+  }, []);
+
   const onInitCall = async (remotePeerIdValue?: string | undefined) => {
     const remoteId = remotePeerIdValue ?? remotePeerId;
     if (remoteId && localVideoRef.current) {
@@ -70,14 +89,25 @@ export const useWebRtc = () => {
 
   const onAnswerCall = async () => {
     if (localVideoRef.current && currentCall.call) {
-      localVideoRef.current.srcObject =
-        await navigator.mediaDevices.getUserMedia({
-          video: true,
-          audio: false,
-        });
+      // @ts-ignore
+      const micro = await navigator.permissions.query({ name: "microphone" });
+      // @ts-ignore
+      const camera = await navigator.permissions.query({ name: "camera" });
+      const localMediaStream = await navigator.mediaDevices.getUserMedia({
+        video: true,
+        audio: false,
+      });
+
+      const remoteMediaStream = await navigator.mediaDevices.getUserMedia({
+        video: true,
+        audio: true,
+      });
+
+      localVideoRef.current.srcObject = localMediaStream;
+
       await localVideoRef.current.play();
       localVideoRef.current.muted = true;
-      currentCall.call.answer();
+      currentCall.call.answer(remoteMediaStream);
       setCurrentCall((prevState) => ({ ...prevState, isAnswered: true }));
     }
   };
@@ -110,7 +140,6 @@ export const useWebRtc = () => {
         });
 
         peer.on("call", async (currentCall: MediaConnection) => {
-          console.log("call");
           setCurrentCall((prevState) => ({ ...prevState, call: currentCall }));
           if (localVideoRef.current) {
             currentCall.on("stream", (remoteStream: MediaStream) => {
