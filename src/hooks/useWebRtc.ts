@@ -30,12 +30,14 @@ export const useWebRtc = () => {
   useEffect(() => {
     (async () => {
       if (navigator) {
+        const media = await navigator.mediaDevices.getUserMedia({
+          video: true,
+          audio: true,
+        });
+        console.log(media);
         setError(
           JSON.stringify({
-            navigator: !!(await navigator.mediaDevices.getUserMedia({
-              video: true,
-              audio: true,
-            })),
+            navigator: JSON.stringify(media.active),
           })
         );
         setExample(true);
