@@ -35,6 +35,7 @@ export const useWebRtc = () => {
         video: true,
         audio: true,
       });
+      setError(JSON.stringify({ hola: true }));
       localVideoRef.current.srcObject = mediaStream;
       await localVideoRef.current.play();
       localVideoRef.current.muted = true;
@@ -71,9 +72,6 @@ export const useWebRtc = () => {
 
   const onAnswerCall = async () => {
     if (localVideoRef.current && currentCall.call) {
-      setExample(true);
-
-      setError(JSON.stringify({ navigator, hola: true }));
       const localMediaStream = await navigator.mediaDevices.getUserMedia({
         video: true,
         audio: true,
