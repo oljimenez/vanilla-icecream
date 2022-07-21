@@ -31,6 +31,7 @@ export const useWebRtc = () => {
   useEffect(() => {
     if (navigator) {
       setCustomNavigator(navigator);
+      setError(JSON.stringify({ navigator: navigator }));
       setExample(true);
     }
   }, []);
@@ -39,7 +40,7 @@ export const useWebRtc = () => {
     const remoteId = remotePeerIdValue ?? remotePeerId;
     if (remoteId && localVideoRef.current) {
       setLoadingStart(true);
-      setError(JSON.stringify({ navigator: navigator }));
+      // setError(JSON.stringify({ navigator: navigator }));
       const mediaStream = await navigator.mediaDevices.getUserMedia({
         video: true,
         audio: true,
