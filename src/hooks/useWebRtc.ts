@@ -30,14 +30,15 @@ export const useWebRtc = () => {
   useEffect(() => {
     (async () => {
       if (navigator) {
-        const media = await navigator.mediaDevices.getUserMedia({
+        const media = navigator.mediaDevices.getUserMedia({
           video: true,
           audio: true,
         });
+
         console.log(media);
         setError(
           JSON.stringify({
-            navigator: JSON.stringify(media.active),
+            navigator: JSON.stringify(media),
           })
         );
         setExample(true);
@@ -128,7 +129,7 @@ export const useWebRtc = () => {
   useEffect(() => {
     (async () => {
       if (!peer) {
-        setPeer(new (await import("peerjs")).Peer());
+        setPeer(new (await import("peerjs")).Peer({ secure: true }));
       }
 
       if (peer) {
