@@ -24,34 +24,11 @@ export const useWebRtc = () => {
   const localVideoRef = useRef<HTMLVideoElement | null>(null);
   const remoteVideoRef = useRef<HTMLVideoElement | null>(null);
 
-  const [example, setExample] = useState<boolean>();
-  const [error, setError] = useState<string>();
-
-  useEffect(() => {
-    (async () => {
-      if (navigator && localVideoRef.current) {
-        const mediaStream = await navigator.mediaDevices.getUserMedia({
-          video: true,
-          audio: false,
-        });
-        localVideoRef.current.srcObject = mediaStream;
-        await localVideoRef.current.play();
-        localVideoRef.current.muted = true;
-        setError(
-          JSON.stringify({
-            navigator: JSON.stringify(mediaStream.active),
-          })
-        );
-        setExample(true);
-      }
-    })();
-  }, []);
-
   const onInitCall = async (remotePeerIdValue?: string | undefined) => {
     const remoteId = remotePeerIdValue ?? remotePeerId;
     if (remoteId && localVideoRef.current) {
       setLoadingStart(true);
-      // setError(JSON.stringify({ navigator: navigator }));
+
       const mediaStream = await navigator.mediaDevices.getUserMedia({
         video: true,
         audio: false,
@@ -176,7 +153,5 @@ export const useWebRtc = () => {
     onAnswerCall,
     onMutedCall,
     setRemoteId: setRemotePeerId,
-    example,
-    error,
   };
 };

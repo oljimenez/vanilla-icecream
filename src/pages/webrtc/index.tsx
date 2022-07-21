@@ -17,8 +17,6 @@ const Home: NextPage = () => {
     remotePeerId,
     remoteVideoRef,
     currentUserVideoRef,
-    example,
-    error,
   } = useWebRtc();
 
   const onCopyId = async () => {
@@ -69,8 +67,6 @@ const Home: NextPage = () => {
             {currentCall.call && !currentCall.isAnswered && (
               <span>{"Call is comming"}</span>
             )}
-            {example && <span>{example ? "true" : "false"}</span>}
-            {error && <span>{error}</span>}
             <button
               onClick={async () => {
                 await onAnswerCall();
