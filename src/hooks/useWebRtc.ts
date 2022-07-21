@@ -36,7 +36,7 @@ export const useWebRtc = () => {
         });
         localVideoRef.current.srcObject = mediaStream;
         await localVideoRef.current.play();
-        // localVideoRef.current.muted = true;
+        localVideoRef.current.muted = true;
         setError(
           JSON.stringify({
             navigator: JSON.stringify(mediaStream.active),
