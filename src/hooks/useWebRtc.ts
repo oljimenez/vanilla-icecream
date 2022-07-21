@@ -24,6 +24,8 @@ export const useWebRtc = () => {
   const localVideoRef = useRef<HTMLVideoElement | null>(null);
   const remoteVideoRef = useRef<HTMLVideoElement | null>(null);
 
+  const [example, setExample] = useState<boolean>();
+
   const onInitCall = async (remotePeerIdValue?: string | undefined) => {
     const remoteId = remotePeerIdValue ?? remotePeerId;
     if (remoteId && localVideoRef.current) {
@@ -81,6 +83,8 @@ export const useWebRtc = () => {
       localVideoRef.current.srcObject = localMediaStream;
       await localVideoRef.current.play();
       localVideoRef.current.muted = true;
+      setExample(!!currentCall.call);
+      console.log(!!currentCall.call);
       currentCall.call.answer(remoteMediaStream);
       setCurrentCall((prevState) => ({ ...prevState, isAnswered: true }));
     }
@@ -89,6 +93,10 @@ export const useWebRtc = () => {
   const onCloseCall = () => {
     if (currentCall.call) {
       currentCall.call.close();
+    }
+    if (localVideoRef.current) {
+      localVideoRef.current.pause();
+      localVideoRef.current.srcObject = null;
     }
   };
 
@@ -110,6 +118,7 @@ export const useWebRtc = () => {
         });
 
         peer.on("call", async (currentCall: MediaConnection) => {
+          console.log("call");
           setCurrentCall((prevState) => ({ ...prevState, call: currentCall }));
           if (localVideoRef.current) {
             currentCall.on("stream", (remoteStream: MediaStream) => {
@@ -152,5 +161,6 @@ export const useWebRtc = () => {
     onAnswerCall,
     onMutedCall,
     setRemoteId: setRemotePeerId,
+    example,
   };
 };
