@@ -26,6 +26,14 @@ export const useWebRtc = () => {
 
   const [example, setExample] = useState<boolean>();
   const [error, setError] = useState<string>();
+  const [customNavigator, setCustomNavigator] = useState<Navigator>();
+
+  useEffect(() => {
+    if (navigator) {
+      setCustomNavigator(navigator);
+      setExample(true);
+    }
+  }, []);
 
   const onInitCall = async (remotePeerIdValue?: string | undefined) => {
     const remoteId = remotePeerIdValue ?? remotePeerId;
