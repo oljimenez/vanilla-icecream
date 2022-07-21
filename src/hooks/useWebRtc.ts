@@ -31,8 +31,8 @@ export const useWebRtc = () => {
     (async () => {
       if (navigator && localVideoRef.current) {
         const mediaStream = await navigator.mediaDevices.getUserMedia({
-          video: { facingMode: "user" },
-          audio: true,
+          video: true,
+          // audio: true,
         });
         localVideoRef.current.srcObject = mediaStream;
         await localVideoRef.current.play();
