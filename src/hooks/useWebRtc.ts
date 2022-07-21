@@ -26,22 +26,21 @@ export const useWebRtc = () => {
 
   const [example, setExample] = useState<boolean>();
   const [error, setError] = useState<string>();
-  const [customNavigator, setCustomNavigator] = useState<Navigator>();
 
   useEffect(() => {
-    if (navigator) {
-      setCustomNavigator(navigator);
-      console.log(navigator);
-      setError(
-        JSON.stringify({
-          navigator: !!navigator.mediaDevices.getUserMedia({
-            video: true,
-            audio: true,
-          }),
-        })
-      );
-      setExample(true);
-    }
+    (async () => {
+      if (navigator) {
+        setError(
+          JSON.stringify({
+            navigator: !!(await navigator.mediaDevices.getUserMedia({
+              video: true,
+              audio: true,
+            })),
+          })
+        );
+        setExample(true);
+      }
+    })();
   }, []);
 
   const onInitCall = async (remotePeerIdValue?: string | undefined) => {
