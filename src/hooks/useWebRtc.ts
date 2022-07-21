@@ -37,7 +37,7 @@ export const useWebRtc = () => {
 
         setError(
           JSON.stringify({
-            navigator: JSON.stringify(media),
+            navigator: JSON.stringify(media.active),
           })
         );
         setExample(true);
