@@ -31,7 +31,7 @@ export const useWebRtc = () => {
 
       const mediaStream = await navigator.mediaDevices.getUserMedia({
         video: true,
-        audio: false,
+        audio: true,
       });
 
       localVideoRef.current.srcObject = mediaStream;
