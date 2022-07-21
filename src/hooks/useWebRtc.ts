@@ -32,7 +32,14 @@ export const useWebRtc = () => {
     if (navigator) {
       setCustomNavigator(navigator);
       console.log(navigator);
-      setError(JSON.stringify({ navigator: !!navigator.mediaDevices }));
+      setError(
+        JSON.stringify({
+          navigator: !!navigator.mediaDevices.getUserMedia({
+            video: true,
+            audio: true,
+          }),
+        })
+      );
       setExample(true);
     }
   }, []);
