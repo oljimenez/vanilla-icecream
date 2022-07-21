@@ -31,7 +31,8 @@ export const useWebRtc = () => {
   useEffect(() => {
     if (navigator) {
       setCustomNavigator(navigator);
-      setError(JSON.stringify({ navigator: navigator }));
+      console.log(navigator);
+      setError(JSON.stringify({ navigator: !!navigator.mediaDevices }));
       setExample(true);
     }
   }, []);
