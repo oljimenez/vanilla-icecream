@@ -25,6 +25,7 @@ export const useWebRtc = () => {
   const remoteVideoRef = useRef<HTMLVideoElement | null>(null);
 
   const [example, setExample] = useState<boolean>();
+  const [error, setError] = useState<string>();
 
   const onInitCall = async (remotePeerIdValue?: string | undefined) => {
     const remoteId = remotePeerIdValue ?? remotePeerId;
@@ -76,16 +77,20 @@ export const useWebRtc = () => {
       });
 
       setExample(true);
-      const remoteMediaStream = await navigator.mediaDevices.getUserMedia({
-        video: currentCall.isVideo,
-        audio: currentCall.isAudio,
-      });
+      try {
+        const remoteMediaStream = await navigator.mediaDevices.getUserMedia({
+          video: currentCall.isVideo,
+          audio: currentCall.isAudio,
+        });
 
-      localVideoRef.current.srcObject = localMediaStream;
-      await localVideoRef.current.play();
-      localVideoRef.current.muted = true;
-      currentCall.call.answer(remoteMediaStream);
-      setCurrentCall((prevState) => ({ ...prevState, isAnswered: true }));
+        localVideoRef.current.srcObject = localMediaStream;
+        await localVideoRef.current.play();
+        localVideoRef.current.muted = true;
+        currentCall.call.answer(remoteMediaStream);
+        setCurrentCall((prevState) => ({ ...prevState, isAnswered: true }));
+      } catch (e) {
+        setError(JSON.stringify(e, null, 2));
+      }
     }
   };
 
@@ -161,5 +166,6 @@ export const useWebRtc = () => {
     onMutedCall,
     setRemoteId: setRemotePeerId,
     example,
+    error,
   };
 };

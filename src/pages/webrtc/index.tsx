@@ -18,6 +18,7 @@ const Home: NextPage = () => {
     remoteVideoRef,
     currentUserVideoRef,
     example,
+    error,
   } = useWebRtc();
 
   return (
@@ -65,6 +66,7 @@ const Home: NextPage = () => {
               <span>{"Call is comming"}</span>
             )}
             {example && <span>{example ? "true" : "false"}</span>}
+            {error && <span>{error}</span>}
             <button
               onClick={async () => {
                 await onAnswerCall();
