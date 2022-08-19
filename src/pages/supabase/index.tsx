@@ -30,7 +30,11 @@ const Index: NextPage = () => {
     <Flex itemSize={"full"} placeItems={"center"} gap={"lg"}>
       <Flex flexDirection={"column"}>
         {messages &&
-          messages.map((message) => <p key={message.id}>{message.text}</p>)}
+          messages.map((message) => (
+            <p style={{ marginBlock: "0px" }} key={message.id}>
+              {message.text}
+            </p>
+          ))}
       </Flex>
       <input value={text} onChange={onTextChange} />
       <button onClick={onSendMessage}>Send Message</button>
