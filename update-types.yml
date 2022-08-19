@@ -1,0 +1,2 @@
+- name: Generate Supabase Database types
+  uses: lyqht/generate-supabase-db-types-github-action@v0.1.0

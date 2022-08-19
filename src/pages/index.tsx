@@ -1,13 +1,11 @@
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import { Box } from "components/box";
+import Link from "next/link";
+import { Flex } from "components/flex";
 
 const Home: NextPage = () => {
   const router = useRouter();
-
-  async function goToWebRTC() {
-    await router.push("/webrtc");
-  }
 
   async function goToVanillaExtract() {
     await router.push("/vanilla");
@@ -22,18 +20,14 @@ const Home: NextPage = () => {
   }
 
   return (
-    <Box
-      height={"100%"}
-      width={"100%"}
-      display={"flex"}
-      justifyContent={"center"}
-      alignItems={"center"}
-    >
-      <button onClick={goToWebRTC}>WebRTC</button>
-      <button onClick={goToVanillaExtract}>Vanilla Extract</button>
-      <button onClick={goToMagnify}>Magnify</button>
-      <button onClick={goToInternalization}>Internalization</button>
-    </Box>
+    <Flex itemSize={"full"} placeItems={"center"} gap={"lg"}>
+      <Link href={{ pathname: "/vanilla" }}>
+        <button>Vanilla Extract</button>
+      </Link>
+      <Link href={{ pathname: "/supabase" }}>
+        <button>Supabase</button>
+      </Link>
+    </Flex>
   );
 };
 

@@ -1,25 +1,20 @@
 import type { NextPage } from "next";
-import { Box, Button } from "components";
+import { Flex } from "components/flex";
+import React from "react";
+import { createComponent } from "theme/utils/createComponent";
+
+const AvatarImage = createComponent("img");
 
 const Home: NextPage = () => {
   return (
-    <Box
-      itemSize={"100%"}
-      fontSize={"lg"}
-      color={"red"}
-      display={"flex"}
+    <Flex
+      itemSize={"fullViewport"}
       placeItems={"center"}
+      color={"red"}
+      gap={"lg"}
     >
-      <Button
-        variant={"primary"}
-        css={{
-          paddingLeft: "xl",
-          fontSize: "xl",
-        }}
-      >
-        Test
-      </Button>
-    </Box>
+      Avatar
+    </Flex>
   );
 };
 

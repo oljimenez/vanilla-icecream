@@ -1,38 +1,39 @@
 import { createGlobalTheme } from "@vanilla-extract/css";
-import { modularScale } from "polished";
+import { breakpointScales } from "theme/values/scales";
+import { createValues } from "theme/values/values";
 
-const createScale = (ratio: number, base: number) => (steps: number) =>
-  `${modularScale(steps, base, ratio)}px`;
-
-const breakpointScales = createScale(2, 4);
 const breakpointValues = {
-  base: breakpointScales(0),
-  sm: breakpointScales(1),
-  md: breakpointScales(2),
-  lg: breakpointScales(3),
-  xl: breakpointScales(4),
+  none: "0px",
+  sm: breakpointScales(0),
+  md: breakpointScales(1),
+  lg: breakpointScales(2),
+  xl: breakpointScales(3),
+  "2xl": breakpointScales(4),
+  "3xl": breakpointScales(5),
+  "4xl": breakpointScales(6),
+  "5xl": breakpointScales(7),
 };
-//{ base: '4px', sm: '8px', md: '16px', lg: '32px', xl: '64px' }
 
 const widthVars = {
   "100%": "100%",
   "100vw": "100vw",
   "90vw": "90vw",
   "20rem": "20rem",
+  full: "100%",
+  fullViewport: "100vw",
 };
 
 const heightVars = {
   "100%": "100%",
   "100vh": "100vh",
   "90vh": "90vh",
-  "20rem": "20rem",
+  full: "100%",
+  fullViewport: "100vh",
 };
 
 export const vars = createGlobalTheme(":root", {
   space: {
-    none: "0",
     ...breakpointValues,
-    "1rem": "1rem",
   },
   color: {
     white: "#fff",
@@ -49,6 +50,14 @@ export const vars = createGlobalTheme(":root", {
   },
   fontSize: breakpointValues,
   lineHeight: breakpointValues,
-  width: widthVars,
-  height: heightVars,
+  width: {
+    ...widthVars,
+    ...createValues("pixel"),
+    ...createValues("rem"),
+  },
+  height: {
+    ...heightVars,
+    ...createValues("pixel"),
+    ...createValues("rem"),
+  },
 });

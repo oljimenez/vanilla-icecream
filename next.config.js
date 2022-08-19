@@ -1,5 +1,5 @@
 const { createVanillaExtractPlugin } = require("@vanilla-extract/next-plugin");
-const nextTranslate = require("next-translate");
+// const nextTranslate = require("next-translate");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -8,5 +8,5 @@ const nextConfig = {
 
 const withVanillaExtract = createVanillaExtractPlugin();
 
-module.exports = withVanillaExtract(nextTranslate(nextConfig));
-// module.exports = withVanillaExtract(nextConfig);
+// module.exports = withVanillaExtract(nextTranslate(nextConfig));
+module.exports = withVanillaExtract(nextConfig);
