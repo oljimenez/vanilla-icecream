@@ -7,7 +7,7 @@ import { useMessages } from "hooks/supabase/useMessages";
 
 const Index: NextPage = () => {
   const { text, onTextChange } = useText();
-  const { messages } = useMessages();
+  const { messages, fetchMessages } = useMessages();
 
   const onSendMessage = async () => {
     await supabaseClient.from<Message>("messages").insert({ text: text });
@@ -22,6 +22,7 @@ const Index: NextPage = () => {
           .eq("id", message.id);
       }
     }
+    await fetchMessages();
   };
 
   return (
