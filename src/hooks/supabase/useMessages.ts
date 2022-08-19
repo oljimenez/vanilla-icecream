@@ -26,7 +26,7 @@ export function useMessages() {
   useEffect(() => {
     const subscription = supabaseClient
       .from<Message>("messages")
-      .on("INSERT", async (payload) => {
+      .on("*", async (payload) => {
         console.log(payload);
         await fetchMessages();
       })
