@@ -1,3 +1,4 @@
+import React from "react";
 import type { NextPage } from "next";
 import { Flex } from "components/flex";
 import { supabaseClient } from "@supabase/auth-helpers-nextjs";
@@ -12,6 +13,15 @@ const Index: NextPage = () => {
   const onSendMessage = async () => {
     await supabaseClient.from<Message>("messages").insert({ text: text });
     onClearText();
+  };
+
+  const onSendMessageEnter = async (
+    event: React.KeyboardEvent<HTMLInputElement>
+  ) => {
+    if (event.code === "Enter") {
+      await supabaseClient.from<Message>("messages").insert({ text: text });
+      onClearText();
+    }
   };
 
   const onClearMessages = async () => {
@@ -36,7 +46,11 @@ const Index: NextPage = () => {
             </p>
           ))}
       </Flex>
-      <input value={text} onChange={onTextChange} />
+      <input
+        value={text}
+        onChange={onTextChange}
+        onKeyDown={onSendMessageEnter}
+      />
       <button onClick={onSendMessage}>Send Message</button>
       <button onClick={onClearMessages}>Clear Messages</button>
     </Flex>
