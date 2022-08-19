@@ -6,8 +6,13 @@ export function useText() {
     setText(e.target.value);
   };
 
+  const onClearText = () => {
+    setText("");
+  };
+
   return {
     text,
     onTextChange,
+    onClearText,
   };
 }

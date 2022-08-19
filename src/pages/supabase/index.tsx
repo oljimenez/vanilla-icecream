@@ -6,11 +6,12 @@ import { useText } from "hooks/supabase/useText";
 import { useMessages } from "hooks/supabase/useMessages";
 
 const Index: NextPage = () => {
-  const { text, onTextChange } = useText();
+  const { text, onTextChange, onClearText } = useText();
   const { messages, fetchMessages } = useMessages();
 
   const onSendMessage = async () => {
     await supabaseClient.from<Message>("messages").insert({ text: text });
+    onClearText();
   };
 
   const onClearMessages = async () => {
