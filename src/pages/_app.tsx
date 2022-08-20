@@ -3,9 +3,6 @@ import "theme/global.css";
 import { useState } from "react";
 import { QueryClient } from "@tanstack/query-core";
 import { QueryClientProvider } from "@tanstack/react-query";
-import { Hydrate } from "@tanstack/react-query";
-import { supabaseClient } from "@supabase/auth-helpers-nextjs";
-import { UserProvider } from "@supabase/auth-helpers-react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [queryClient] = useState(
@@ -19,11 +16,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         },
       })
   );
+
   return (
     <QueryClientProvider client={queryClient}>
-      <UserProvider supabaseClient={supabaseClient}>
-        <Component {...pageProps} />
-      </UserProvider>
+      <Component {...pageProps} />
     </QueryClientProvider>
   );
 }

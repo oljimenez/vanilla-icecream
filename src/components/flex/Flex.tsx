@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { AllHTMLAttributes, createElement, ElementType } from "react";
+import React, { AllHTMLAttributes, createElement } from "react";
 import { sprinkles, Sprinkles } from "theme/sprinkles";
 import { extractParams } from "theme/utils";
 
