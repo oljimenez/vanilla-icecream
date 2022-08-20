@@ -11,6 +11,7 @@
     "@supabase/auth-helpers-nextjs": "^0.2.7",
     "@supabase/auth-helpers-react": "^0.2.3",
     "@supabase/supabase-js": "^1.35.6",
+    "@tanstack/react-query": "^4.2.1",
     "@vanilla-extract/babel-plugin": "^1.1.7",
     "@vanilla-extract/css": "^1.7.2",
     "@vanilla-extract/next-plugin": "^2.0.2",
@@ -21,7 +22,6 @@
     "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
-    "react-query": "^3.39.2",
     "tls": "^0.0.1"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
-import { handleAuth } from "@supabase/auth-helpers-nextjs";
+import { handleAuth } from '@supabase/auth-helpers-nextjs';
 
 export default handleAuth({
-  logout: { returnTo: "/" },
-  cookieOptions: { lifetime: 7 * 24 * 60 * 60 },
+    logout: { returnTo: '/' },
+    cookieOptions: { lifetime: 365 * 24 * 60 * 60 }
 });
