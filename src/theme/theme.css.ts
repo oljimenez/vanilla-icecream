@@ -40,16 +40,17 @@ export const vars = createGlobalTheme(":root", {
     black: "#000",
     red: "#ff0000",
     blue: "#0000ff",
+    error: "#F11122",
+    "error.100": "#F11122",
+    "error.200": "#E01020",
+    "error.300": "#B90F1C",
+    "error.400": "#840811",
+    "error.500": "#250606",
   },
-  borderRadius: {
-    ...breakpointValues,
-    "50%": "50%",
-  },
+  breakpointValues,
   fontFamily: {
     body: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
   },
-  fontSize: breakpointValues,
-  lineHeight: breakpointValues,
   width: {
     ...widthVars,
     ...createValues("pixel"),

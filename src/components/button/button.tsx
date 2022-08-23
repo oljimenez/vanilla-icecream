@@ -1,7 +1,7 @@
-import React from "react";
-import { ButtonPropsWithSprinkles } from "theme/utils/types";
-import { createComponent } from "theme/utils/createComponent";
+import React from 'react';
+import { createComponent } from 'theme/create/createComponent';
+import { buttonVariants } from './button.css';
 
-const Button = createComponent<ButtonPropsWithSprinkles>("button");
+const Button = createComponent('button', {}, buttonVariants);
 
 export { Button };

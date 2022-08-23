@@ -1,8 +1,7 @@
 import React from "react";
-import { DivPropsWithSprinkles } from "theme/utils/types";
-import { createComponent } from "theme/utils/createComponent";
+import { createComponent } from "theme/create/createComponent";
 
-const Flex = createComponent<Omit<DivPropsWithSprinkles, "display">>("div", {
+const Flex = createComponent("div", {
   display: "flex",
 });
 

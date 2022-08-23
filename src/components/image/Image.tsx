@@ -1,6 +1,6 @@
 import React from "react";
 import { createComponent } from "theme/create/createComponent";
 
-const Box = createComponent("div");
+const Image = createComponent("img");
 
-export { Box };
+export { Image };
