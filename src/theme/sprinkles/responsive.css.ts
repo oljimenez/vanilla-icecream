@@ -11,8 +11,16 @@ const responsiveProperties = defineProperties({
   properties: {
     display: ["none", "flex", "grid"],
     flexDirection: ["row", "column"],
-    alignItems: ["stretch", "flex-start", "center", "flex-end"],
-    justifyContent: ["stretch", "flex-start", "center", "flex-end"],
+    alignItems: ["start", "center", "end", "stretch"],
+    justifyContent: [
+      "start",
+      "center",
+      "end",
+      "stretch",
+      "space-between",
+      "space-evenly",
+      "space-around",
+    ],
     zIndex: ["auto", "inherit", "initial"],
     gap: vars.space,
     paddingTop: vars.space,

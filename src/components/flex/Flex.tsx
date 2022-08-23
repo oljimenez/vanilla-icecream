@@ -1,25 +1,9 @@
-import type { NextPage } from "next";
-import React, { AllHTMLAttributes, createElement } from "react";
-import { sprinkles, Sprinkles } from "theme/sprinkles";
-import { extractParams } from "theme/utils";
+import React from "react";
+import { DivPropsWithSprinkles } from "theme/utils/types";
+import { createComponent } from "theme/utils/createComponent";
 
-export interface BoxProps
-  extends Omit<AllHTMLAttributes<HTMLElement>, keyof Sprinkles | "style">,
-    Omit<Sprinkles, "display"> {}
-
-const Flex: NextPage<BoxProps> = ({ children, ...props }) => {
-  const { sprinklesProps, elementProps } = extractParams(props);
-  return createElement(
-    "div",
-    {
-      className: sprinkles({
-        display: "flex",
-        ...sprinklesProps,
-      }),
-      ...elementProps,
-    },
-    children
-  );
-};
+const Flex = createComponent<Omit<DivPropsWithSprinkles, "display">>("div", {
+  display: "flex",
+});
 
 export { Flex };

@@ -1,7 +1,6 @@
 import { createElement, ElementType, ReactNode } from "react";
 import { extractParams } from "theme/utils";
 import { sprinkles } from "theme/sprinkles";
-import { ComponentTypes } from "theme/utils/types";
 
 export const styleComponent = (
   componentType: ElementType,
@@ -10,7 +9,7 @@ export const styleComponent = (
 ) => {
   const { sprinklesProps, elementProps } = extractParams(props);
 
-  return createElement<ComponentTypes>(
+  return createElement(
     componentType,
     {
       className: sprinkles(sprinklesProps),

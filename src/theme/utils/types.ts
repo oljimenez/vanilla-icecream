@@ -6,12 +6,14 @@ export type ComponentTypes =
   | DivPropsWithSprinkles
   | ImagePropsWithSprinkles;
 
+export type ComponentType = "div" | "button" | "img";
+
 export interface DivPropsWithSprinkles
   extends Omit<React.HTMLAttributes<HTMLDivElement>, keyof Sprinkles>,
     Sprinkles {}
 
 export interface ButtonPropsWithSprinkles
-  extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, keyof Sprinkles>,
+  extends Omit<React.ButtonHTMLAttributes<HTMLDivElement>, keyof Sprinkles>,
     Sprinkles {}
 
 export interface ImagePropsWithSprinkles

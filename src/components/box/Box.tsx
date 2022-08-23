@@ -1,9 +1,6 @@
 import React from "react";
-import { styleComponent } from "theme/utils/styleComponent";
-import { DivPropsWithSprinkles } from "theme/utils/types";
+import { createComponent } from "theme/utils/createComponent";
 
-const Box: React.FC<DivPropsWithSprinkles> = ({ children, ...props }) => {
-  return styleComponent("div", props, children);
-};
+const Box = createComponent("div");
 
 export { Box };
