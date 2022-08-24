@@ -1,7 +1,6 @@
-import React from 'react';
-import { createComponent } from 'theme/create/createComponent';
-import { buttonVariants } from './button.css';
+import { buttonStyle, buttonVariants } from './button.css';
+import { createComponent } from 'theme/create';
 
-const Button = createComponent('button', {}, buttonVariants);
+const Button = createComponent('button', buttonStyle, buttonVariants);
 
 export { Button };

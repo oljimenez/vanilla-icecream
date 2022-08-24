@@ -1,6 +1,6 @@
 import React from 'react';
 import { createComponent } from 'theme/create';
 
-const Box = createComponent('div');
+const Input = createComponent('input');
 
-export { Box };
+export { Input };

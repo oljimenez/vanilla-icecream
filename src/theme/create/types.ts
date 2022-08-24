@@ -1,12 +1,14 @@
-import { Sprinkles } from 'theme/sprinkles';
 import { VariantSelection } from '@vanilla-extract/recipes/dist/declarations/src/types';
 
-export type ComponentType = 'div' | 'button' | 'img';
+export type ComponentType = 'div' | 'button' | 'img' | 'input';
 
-export type PropsWithSprinkles<
+export type Props<
+    S,
     T,
     V extends VariantSelection<{}> | undefined = never
-> = Omit<T, keyof Sprinkles> &
-    Sprinkles & {
+> = T &
+    S & {
         variant?: V;
     };
+
+export type RecordProps = Record<string, unknown>;

@@ -1,6 +1,6 @@
-import React from "react";
-import { createComponent } from "theme/create/createComponent";
+import React from 'react';
+import { createComponent } from 'theme/create';
 
-const Image = createComponent("img");
+const Image = createComponent('img');
 
 export { Image };

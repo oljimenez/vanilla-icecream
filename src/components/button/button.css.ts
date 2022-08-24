@@ -41,3 +41,11 @@ export const buttonVariants = recipe({
         style: 'primary'
     }
 });
+
+export const buttonStyle = style({
+    padding: '1rem 3rem',
+    backgroundColor: 'blue',
+    ':hover': {
+        backgroundColor: 'indianred'
+    }
+});

@@ -1,36 +1,42 @@
 import React from 'react';
 import { RuntimeFn } from '@vanilla-extract/recipes/dist/declarations/src/types';
 import { RecipeVariants } from '@vanilla-extract/recipes';
-import {
-    ComponentType,
-    PropsWithSprinkles,
-    Sprinkles,
-    styleComponent
-} from 'theme';
+import { styleComponent } from './styleComponent';
+import { ComponentType, Props } from './types';
+import { sprinkles } from 'theme/sprinkles';
 
-export const createComponent = <
-    T extends ComponentType,
-    F extends RuntimeFn<{}> = RuntimeFn<{}>
->(
-    type: T,
-    defaultSprinkles?: Sprinkles,
-    variantFn?: F
+export const createComponentWithSprinkles = <S extends (...args: any) => any>(
+    sprinklesFn: S
 ) => {
-    type Type = T extends 'button'
-        ? React.ButtonHTMLAttributes<HTMLButtonElement>
-        : T extends 'img'
-        ? React.ImgHTMLAttributes<HTMLImageElement>
-        : React.HTMLAttributes<HTMLDivElement>;
+    type Sprinkles = Parameters<typeof sprinklesFn>[0];
 
-    return ({
-        children,
-        ...props
-    }: PropsWithSprinkles<Type, RecipeVariants<F>>) => {
-        return styleComponent(
-            type,
-            { ...defaultSprinkles, ...props },
+    return <T extends ComponentType, F extends RuntimeFn<{}> = RuntimeFn<{}>>(
+        type: T,
+        defaultStyle?: Sprinkles | string,
+        variantFn?: F
+    ) => {
+        type Type = T extends 'button'
+            ? React.ButtonHTMLAttributes<HTMLButtonElement>
+            : T extends 'input'
+            ? React.InputHTMLAttributes<HTMLInputElement>
+            : T extends 'img'
+            ? React.ImgHTMLAttributes<HTMLImageElement>
+            : React.HTMLAttributes<HTMLDivElement>;
+
+        return ({
             children,
-            variantFn
-        );
+            ...props
+        }: Props<Sprinkles, Type, RecipeVariants<F>>) => {
+            return styleComponent(
+                sprinklesFn,
+                type,
+                children,
+                props,
+                defaultStyle,
+                variantFn
+            );
+        };
     };
 };
+
+export const createComponent = createComponentWithSprinkles(sprinkles);
