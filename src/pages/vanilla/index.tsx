@@ -9,19 +9,25 @@ const Home: NextPage = () => {
     return (
         <Flex
             flexDirection={'column'}
+            flexPlaceItems={'center'}
             itemSize={'fullViewport'}
-            placeItems={'center'}
             gap={'lg'}
         >
-            <Flex placeItems={'center'} gap={'lg'}>
-                <Button variant={{ style: 'primary' }}>Primary</Button>
-                <Button variant={{ style: 'secondary' }}>Secondary</Button>
-                <Button variant={{ style: 'ternary' }}>Ternary</Button>
+            <Flex flexPlaceItems={'center'} flexDirection={'column'}>
+                <p>Flexbox</p>
+                <Flex flexPlaceItems={'center'} gap={'lg'}>
+                    <Button variant={{ style: 'primary' }}>Primary</Button>
+                    <Button variant={{ style: 'secondary' }}>Secondary</Button>
+                    <Button variant={{ style: 'ternary' }}>Ternary</Button>
+                </Flex>
             </Flex>
-            <Grid gridTemplateColumns={'1fr 1fr 1fr;'} gap={'lg'}>
-                <Button variant={{ style: 'primary' }}>Primary</Button>
-                <Button variant={{ style: 'secondary' }}>Secondary</Button>
-                <Button variant={{ style: 'ternary' }}>Ternary</Button>
+            <Grid placeItems={'center'}>
+                <p>Grid</p>
+                <Grid gridTemplateColumns={'1fr 1fr 1fr;'} gap={'lg'}>
+                    <Button variant={{ style: 'primary' }}>Primary</Button>
+                    <Button variant={{ style: 'secondary' }}>Secondary</Button>
+                    <Button variant={{ style: 'ternary' }}>Ternary</Button>
+                </Grid>
             </Grid>
         </Flex>
     );
