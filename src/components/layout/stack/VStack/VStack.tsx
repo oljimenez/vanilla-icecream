@@ -1,11 +1,11 @@
 import React from 'react';
 import { createComponent } from 'theme/create';
 
-const Stack = createComponent('div', {
+const VStack = createComponent('div', {
     defaultSprinkles: {
         display: 'flex',
-        padding: 'sm'
+        flexDirection: 'column'
     }
 });
 
-export { Stack };
+export { VStack };

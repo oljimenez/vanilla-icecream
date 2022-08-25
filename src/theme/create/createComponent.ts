@@ -1,9 +1,11 @@
-import React from 'react';
 import { RuntimeFn } from '@vanilla-extract/recipes/dist/declarations/src/types';
 import { RecipeVariants } from '@vanilla-extract/recipes';
 import { styleComponent } from './styleComponent';
-import { ComponentType, Props } from './types';
+import { Props } from './types';
 import { sprinkles } from 'theme/sprinkles';
+
+type PropsType<T extends keyof JSX.IntrinsicElements> =
+    JSX.IntrinsicElements[T];
 
 export const createComponentWithSprinkles = <S extends (...args: any) => any>(
     sprinklesFn: S
@@ -16,22 +18,17 @@ export const createComponentWithSprinkles = <S extends (...args: any) => any>(
         variantFn?: F;
     };
 
-    return <T extends ComponentType, F extends RuntimeFn<{}> = RuntimeFn<{}>>(
+    return <
+        T extends keyof JSX.IntrinsicElements,
+        F extends RuntimeFn<{}> = RuntimeFn<{}>
+    >(
         type: T,
         componentProps?: CreateComponentProps<F>
     ) => {
-        type Type = T extends 'button'
-            ? React.ButtonHTMLAttributes<HTMLButtonElement>
-            : T extends 'input'
-            ? React.InputHTMLAttributes<HTMLInputElement>
-            : T extends 'img'
-            ? React.ImgHTMLAttributes<HTMLImageElement>
-            : React.HTMLAttributes<HTMLDivElement>;
-
         return ({
             children,
             ...props
-        }: Props<Sprinkles, Type, RecipeVariants<F>>) => {
+        }: Props<Sprinkles, PropsType<typeof type>, RecipeVariants<F>>) => {
             return styleComponent(
                 sprinklesFn,
                 type,
