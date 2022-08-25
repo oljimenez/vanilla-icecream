@@ -2,7 +2,7 @@
 
 To start locally you need "npm" and "node" in your machine
 
-ATENTION "This proyect use vanilla-extract as base method of style"
+ATTENTION "This proyect use vanilla-extract as base method of style" ATTENTION
 look at the docs for help https://vanilla-extract.style/
 
 To install dependencies:
@@ -18,7 +18,7 @@ You can see en example in https://oscar-vanilla-kit.vercel.app/
 
 Go to src/pages/index.tsx to see the result code example for now
 
-Sorry this need some good docs but is a starter proyect for now,
+Sorry this need some good docs but is a starter project for now,
 and i'm planning to convert it to a helper library
 
 ```bash
