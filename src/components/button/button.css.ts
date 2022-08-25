@@ -26,14 +26,14 @@ export const buttonVariants = recipe({
                     backgroundColor: 'rgba(0,50,255,0.5)',
                     color: '#ffffff'
                 }
-            }
-        },
-        color: {
-            red: {
-                color: 'red'
             },
-            blue: {
-                color: 'blue'
+            ternary: {
+                backgroundColor: '#ffd500',
+                boxShadow: '0 0 1rem #ffd500',
+                ':hover': {
+                    backgroundColor: 'rgba(255,213,0,0.77)',
+                    color: '#ffffff'
+                }
             }
         }
     },

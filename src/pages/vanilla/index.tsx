@@ -6,7 +6,9 @@ import { Button } from 'components/button';
 const Home: NextPage = () => {
     return (
         <Flex itemSize={'fullViewport'} placeItems={'center'} gap={'lg'}>
-            <Button>Hello world</Button>
+            <Button variant={{ style: 'primary' }}>Primary</Button>
+            <Button variant={{ style: 'secondary' }}>Secondary</Button>
+            <Button variant={{ style: 'ternary' }}>Ternary</Button>
         </Flex>
     );
 };

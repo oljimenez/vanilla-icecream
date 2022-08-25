@@ -10,10 +10,15 @@ export const createComponentWithSprinkles = <S extends (...args: any) => any>(
 ) => {
     type Sprinkles = Parameters<typeof sprinklesFn>[0];
 
+    type CreateComponentProps<F> = {
+        defaultStyle?: string;
+        defaultSprinkles?: Sprinkles;
+        variantFn?: F;
+    };
+
     return <T extends ComponentType, F extends RuntimeFn<{}> = RuntimeFn<{}>>(
         type: T,
-        defaultStyle?: Sprinkles | string,
-        variantFn?: F
+        componentProps?: CreateComponentProps<F>
     ) => {
         type Type = T extends 'button'
             ? React.ButtonHTMLAttributes<HTMLButtonElement>
@@ -32,8 +37,9 @@ export const createComponentWithSprinkles = <S extends (...args: any) => any>(
                 type,
                 children,
                 props,
-                defaultStyle,
-                variantFn
+                componentProps?.defaultStyle,
+                componentProps?.defaultSprinkles,
+                componentProps?.variantFn
             );
         };
     };
