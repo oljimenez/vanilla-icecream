@@ -1,12 +1,10 @@
-const { createVanillaExtractPlugin } = require("@vanilla-extract/next-plugin");
-// const nextTranslate = require("next-translate");
+const { createVanillaExtractPlugin } = require('@vanilla-extract/next-plugin');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+    reactStrictMode: true
 };
 
 const withVanillaExtract = createVanillaExtractPlugin();
 
-// module.exports = withVanillaExtract(nextTranslate(nextConfig));
 module.exports = withVanillaExtract(nextConfig);
