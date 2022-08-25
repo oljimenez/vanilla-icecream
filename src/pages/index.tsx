@@ -17,38 +17,6 @@ const Home: NextPage = () => {
                     <Button variant={{ style: 'ternary' }}>Ternary</Button>
                 </HStack>
             </VStack>
-            <Grid placeItems={'center'}>
-                <Text>Grid</Text>
-                <Grid gridTemplateColumns={'1fr 1fr 1fr'} gap={'lg'}>
-                    <Center flexDirection={'column'}>
-                        <Text>Button with style extension</Text>
-                        <Button
-                            className={buttonStyle}
-                            variant={{ style: 'primary' }}
-                        >
-                            Primary
-                        </Button>
-                    </Center>
-                    <Center flexDirection={'column'}>
-                        <Text>Button with style extension</Text>
-                        <Button
-                            className={buttonStyle}
-                            variant={{ style: 'secondary' }}
-                        >
-                            Secondary
-                        </Button>
-                    </Center>
-                    <Center flexDirection={'column'}>
-                        <Text>Button with style extension</Text>
-                        <Button
-                            className={buttonStyle}
-                            variant={{ style: 'ternary' }}
-                        >
-                            Ternary
-                        </Button>
-                    </Center>
-                </Grid>
-            </Grid>
         </VStack>
     );
 };
