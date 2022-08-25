@@ -1,8 +1,8 @@
 import { createSprinkles } from '@vanilla-extract/sprinkles';
 import {
-    colorProperties,
     responsiveProperties,
-    unResponsiveProperties
+    unResponsiveProperties,
+    colorProperties
 } from './properties';
 
 export const sprinkles = createSprinkles(

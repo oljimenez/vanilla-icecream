@@ -1,6 +1,6 @@
 import { RuntimeFn } from '@vanilla-extract/recipes/dist/declarations/src/types';
 import { RecipeVariants } from '@vanilla-extract/recipes';
-import { styleComponent } from './styleComponent';
+import { styleComponent } from 'theme/helper';
 import { VariantSelection } from '@vanilla-extract/recipes/dist/declarations/src/types';
 import { sprinkles } from 'theme/sprinkles';
 

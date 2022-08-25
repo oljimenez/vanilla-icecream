@@ -1,5 +1,5 @@
 import { defineProperties } from '@vanilla-extract/sprinkles';
-import { vars } from 'theme';
+import { vars } from 'theme/theme.css';
 
 export const colorProperties = defineProperties({
     conditions: {
