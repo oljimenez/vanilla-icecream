@@ -22,13 +22,25 @@ and i'm planning to convert it to a helper library
 
 Step 1:
 - Create a .ts file and call createComponentWithSprinkles(sprinkles) and
- passing ur sprinkles function result of createSprinkles from vanilla-extract.
+ passing ur "sprinkles" function result of "createSprinkles" from "vanilla-extract".
  It will return a function, let call him  "createComponent" that allow you to
  create custom React Components with all your sprinkles parameters as props.
  
+ //your sprinkles function result
+  const sprinkles = createSprinkles(
+    responsiveProperties,
+    colorProperties,
+    unResponsiveProperties
+);
+
+  //using "createComponentWithSprinkles" function to generate your magic function
+   const createComponent = createComponentWithSprinkles(sprinkles);
+
 Step 2:
-- Create a .tsx file for your component, example Box.tsx and call createComponent 
-function that you create previously.
+- Create a .tsx file for your component, example "Box.tsx" and call createComponent 
+function that you create previously. It will return a react component. Something like this 
+
+  const Box = createComponent('div');
 
 Step 3:
 - Edit all the sprinklesProperties as you like, in this example you can found them
