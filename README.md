@@ -5,9 +5,14 @@ To start locally you need "npm" and "node" in your machine
 ATENTION "This proyect use vanilla-extract as base method of style"
 look at the docs for help https://vanilla-extract.style/
 
-run "yarn dev" or "npm run dev" to start development
+To install dependencies:
+- run "yarn" or "npm install"
 
-run "yarn build" or "npm run build" to build proyect
+To start development mode:
+- run "yarn dev" or "npm run dev" 
+
+To build this project:
+- run "yarn build" or "npm run build"
 
 You can see en example in https://oscar-vanilla-kit.vercel.app/
 
