@@ -1,5 +1,5 @@
 import React from 'react';
-import { createComponent } from 'theme/create';
+import { createComponent } from 'theme/helper';
 
 const Grid = createComponent('div', {
     defaultSprinkles: {

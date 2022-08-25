@@ -1,6 +1,6 @@
 import { createGlobalTheme } from '@vanilla-extract/css';
-import { breakpointScales } from 'theme/values/scales';
-import { createValues } from 'theme/values/values';
+import { breakpointScales } from 'theme/helper/values/scales';
+import { createValues } from 'theme/helper/values/values';
 
 const breakpointValues = {
     none: '0px',
