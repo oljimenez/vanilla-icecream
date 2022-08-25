@@ -19,9 +19,25 @@ Go to src/pages/index.tsx to see the result code example for now
 Sorry this need some good docs but is a starter proyect for now, and i'm planning to convert it to a helper library 
 
 # How to create component?
-Only have to create a .tsx file and call createComponent function from 'theme/helper'
-This function allow you to create a React Component with all your sprinkles properties
-as props of the component.
+
+Step 1:
+- Create a .ts file and call createComponentWithSprinkles(sprinkles) and
+ passing ur sprinkles function result of createSprinkles from vanilla-extract.
+ It will return a function, let call him  "createComponent" that allow you to
+ create custom React Components with all your sprinkles parameters as props.
+ 
+Step 2:
+- Create a .tsx file for your component, example Box.tsx and call createComponent 
+function that you create previously.
+
+Step 3:
+- Edit all the sprinklesProperties as you like, in this example you can found them
+in src/theme/sprinkles/properties folder
+
+Result: 
+    <Box display={'flex'} justifyContent={'center'} padding={'sm'}>
+         Example
+    </Box>
 
 
 

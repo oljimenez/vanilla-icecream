@@ -1,5 +1,5 @@
 import { defineProperties } from '@vanilla-extract/sprinkles';
-import { vars } from '../theme.css';
+import { vars } from '../../theme.css';
 
 const BorderStyles = [
     'dashed',
@@ -14,7 +14,7 @@ const BorderStyles = [
     'solid'
 ];
 
-const responsiveProperties = defineProperties({
+export const responsiveProperties = defineProperties({
     conditions: {
         mobile: {},
         tablet: { '@media': 'screen and (min-width: 768px)' },
@@ -74,5 +74,3 @@ const responsiveProperties = defineProperties({
         typeSize: ['fontSize', 'lineHeight']
     }
 });
-
-export default responsiveProperties;

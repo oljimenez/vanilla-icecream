@@ -1,7 +1,9 @@
 import { createSprinkles } from '@vanilla-extract/sprinkles';
-import colorProperties from './colors.css';
-import responsiveProperties from './responsive.css';
-import unResponsiveProperties from 'theme/sprinkles/unresponsive.css';
+import {
+    colorProperties,
+    responsiveProperties,
+    unResponsiveProperties
+} from './properties';
 
 export const sprinkles = createSprinkles(
     responsiveProperties,
