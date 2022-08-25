@@ -16,7 +16,7 @@ You can see en example in https://oscar-vanilla-kit.vercel.app/
 
 Go to src/pages/index.tsx to see the result code example for now
 
-Sorry this need some good docs but is a starter proyect for now
+Sorry this need some good docs but is a starter proyect for now, and i'm planning to convert it to a helper library 
 
 # How to create component?
 Only have to create a .tsx file and call createComponent function from 'theme/helper'
