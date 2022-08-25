@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
-import { Button, buttonStyle } from 'components/interaction';
-import { Center, Grid, HStack, VStack } from 'components/layout';
+import { Button } from 'components/interaction';
+import { HStack, VStack } from 'components/layout';
 import { Text } from 'components/text';
 
 const Home: NextPage = () => {
