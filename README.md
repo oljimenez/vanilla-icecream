@@ -47,9 +47,16 @@ Step 3:
 in src/theme/sprinkles/properties folder
 
 Result: 
-    <Box display={'flex'} justifyContent={'center'} padding={'sm'}>
-         Example
-    </Box>
+   <Box
+        display={'flex'}
+        justifyContent={{ mobile: 'center', desktop: 'space-between' }}
+        alignItems={'center'}
+        padding={'sm'}
+        background={{ lightMode: 'error.200', darkMode: 'error.100' }}
+        color={'error.200'}
+    >
+        Example
+    </Box>         
 
 
 
