@@ -4,7 +4,7 @@ import { Center, Grid, HStack, VStack } from 'components/layout';
 
 const Home: NextPage = () => (
     <VStack flexPlaceItems={'center'} itemSize={'fullViewport'} gap={'lg'}>
-        <h1>Build with Vanilla Extract Kit</h1>
+        <h1>Build with Vanilla Kit</h1>
         <VStack flexPlaceItems={'center'}>
             <p>Flexbox</p>
             <HStack flexPlaceItems={'center'} gap={'lg'}>
@@ -15,7 +15,6 @@ const Home: NextPage = () => (
         </VStack>
         <Grid placeItems={'center'}>
             <p>Grid</p>
-
             <Grid gridTemplateColumns={'1fr 1fr 1fr;'} gap={'lg'}>
                 <Center flexDirection={'column'}>
                     <p>Button with style extension</p>

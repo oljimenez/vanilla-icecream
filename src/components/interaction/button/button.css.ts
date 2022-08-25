@@ -1,6 +1,6 @@
-import { recipe } from '@vanilla-extract/recipes';
-import { vars } from 'theme/theme.css';
-import { createVar, style } from '@vanilla-extract/css';
+import {recipe} from '@vanilla-extract/recipes';
+import {vars} from 'theme/theme.css';
+import {style} from '@vanilla-extract/css';
 
 export const buttonVariants = recipe({
     base: {
