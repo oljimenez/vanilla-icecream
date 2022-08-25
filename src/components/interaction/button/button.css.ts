@@ -43,10 +43,6 @@ export const buttonVariants = recipe({
 });
 
 export const buttonStyle = style({
-    vars: {
-        '--global-variable': 'purple'
-    },
     padding: '1rem 3rem',
-    backgroundColor: '--global-variable',
-    ':hover': {}
+    fontSize: '2rem'
 });

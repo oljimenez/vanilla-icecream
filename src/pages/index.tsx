@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
-import { HStack, VStack } from 'components/layout/stack';
-import { Button } from 'components/interaction';
-import { Grid } from 'components/layout/grid';
+import { Button, buttonStyle } from 'components/interaction';
+import { Center, Grid, HStack, VStack } from 'components/layout';
 
 const Home: NextPage = () => (
     <VStack flexPlaceItems={'center'} itemSize={'fullViewport'} gap={'lg'}>
@@ -16,10 +15,35 @@ const Home: NextPage = () => (
         </VStack>
         <Grid placeItems={'center'}>
             <p>Grid</p>
+
             <Grid gridTemplateColumns={'1fr 1fr 1fr;'} gap={'lg'}>
-                <Button variant={{ style: 'primary' }}>Primary</Button>
-                <Button variant={{ style: 'secondary' }}>Secondary</Button>
-                <Button variant={{ style: 'ternary' }}>Ternary</Button>
+                <Center flexDirection={'column'}>
+                    <p>Button with style extension</p>
+                    <Button
+                        className={buttonStyle}
+                        variant={{ style: 'primary' }}
+                    >
+                        Primary
+                    </Button>
+                </Center>
+                <Center flexDirection={'column'}>
+                    <p>Button with style extension</p>
+                    <Button
+                        className={buttonStyle}
+                        variant={{ style: 'secondary' }}
+                    >
+                        Secondary
+                    </Button>
+                </Center>
+                <Center flexDirection={'column'}>
+                    <p>Button with style extension</p>
+                    <Button
+                        className={buttonStyle}
+                        variant={{ style: 'ternary' }}
+                    >
+                        Ternary
+                    </Button>
+                </Center>
             </Grid>
         </Grid>
     </VStack>
