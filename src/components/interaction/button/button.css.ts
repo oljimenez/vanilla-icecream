@@ -1,6 +1,6 @@
 import { recipe } from '@vanilla-extract/recipes';
 import { vars } from 'theme/theme.css';
-import { style } from '@vanilla-extract/css';
+import { createVar, style } from '@vanilla-extract/css';
 
 export const buttonVariants = recipe({
     base: {
@@ -43,9 +43,10 @@ export const buttonVariants = recipe({
 });
 
 export const buttonStyle = style({
+    vars: {
+        '--global-variable': 'purple'
+    },
     padding: '1rem 3rem',
-    backgroundColor: 'blue',
-    ':hover': {
-        backgroundColor: 'indianred'
-    }
+    backgroundColor: '--global-variable',
+    ':hover': {}
 });

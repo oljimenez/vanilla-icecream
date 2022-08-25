@@ -1,6 +1,7 @@
 import { createElement, ElementType, ReactNode } from 'react';
 import { RuntimeFn } from '@vanilla-extract/recipes/dist/declarations/src/types';
 import classNames from 'classnames';
+import { RecordProps } from 'theme/create/types';
 
 export const styleComponent = <S extends (...args: any) => any>(
     sprinklesFn: S,
@@ -34,8 +35,6 @@ export const styleComponent = <S extends (...args: any) => any>(
         children
     );
 };
-
-import { RecordProps } from 'theme/create/types';
 
 const getSprinklesParams = (sprinkles: Record<string, any>) => {
     const sprinklesParams: string[] = [];

@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import { Flex } from 'components/layout/flex';
 import React from 'react';
 import { Button } from 'components/interaction/button';
+import { Stack } from 'components/layout/stack';
 
 const Home: NextPage = () => {
     return (
@@ -12,23 +13,21 @@ const Home: NextPage = () => {
             gap={'lg'}
         >
             <Flex
-                flexDirection={'column'}
-                borderWidth={'1px'}
-                borderStyle={'solid'}
-                borderColor={'red'}
+                placeItems={'center'}
+                border={'1px solid blue'}
                 borderRadius={'md'}
                 padding={'2xl'}
-                placeItems={'center'}
                 gap={'lg'}
             >
-                <Flex padding={'2xl'} placeItems={'center'} gap={'lg'}>
-                    <Button variant={{ style: 'primary' }}>Primary</Button>
-                    <Button variant={{ style: 'secondary' }}>Secondary</Button>
-                    <Button variant={{ style: 'ternary' }}>Ternary</Button>
-                </Flex>
-
-                <Flex padding={'2xl'} placeItems={'center'} gap={'lg'}></Flex>
+                <Button variant={{ style: 'primary' }}>Primary</Button>
+                <Button variant={{ style: 'secondary' }}>Secondary</Button>
+                <Button variant={{ style: 'ternary' }}>Ternary</Button>
             </Flex>
+            <Stack gap={'lg'}>
+                <Button variant={{ style: 'primary' }}>Primary</Button>
+                <Button variant={{ style: 'secondary' }}>Secondary</Button>
+                <Button variant={{ style: 'ternary' }}>Ternary</Button>
+            </Stack>
         </Flex>
     );
 };

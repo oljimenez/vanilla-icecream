@@ -1,6 +1,19 @@
 import { defineProperties } from '@vanilla-extract/sprinkles';
 import { vars } from '../theme.css';
 
+const BorderStyles = [
+    'dashed',
+    'dotted',
+    'double',
+    'groove',
+    'hidden',
+    'inset',
+    'none',
+    'outset',
+    'ridge',
+    'solid'
+];
+
 const responsiveProperties = defineProperties({
     conditions: {
         mobile: {},
@@ -34,12 +47,18 @@ const responsiveProperties = defineProperties({
         height: vars.height,
         borderRadius: vars.breakpointValues,
         borderWidth: ['1px'],
-        borderStyle: ['solid'],
+        borderStyle: BorderStyles,
         borderColor: vars.color,
         fontFamily: vars.fontFamily,
         fontSize: vars.breakpointValues,
         lineHeight: vars.breakpointValues,
-        textAlign: ['start', 'center', 'end', 'justify']
+        textAlign: ['start', 'center', 'end', 'justify'],
+        border: {
+            '1px solid red': '1px solid red',
+            '1px solid blue': '1px solid blue',
+            '1px solid yellow': '1px solid yellow',
+            '1px solid green': '1px solid green'
+        }
     },
     shorthands: {
         placeItems: ['justifyContent', 'alignItems'],
@@ -50,7 +69,6 @@ const responsiveProperties = defineProperties({
         margin: ['marginTop', 'marginBottom', 'marginLeft', 'marginRight'],
         marginX: ['marginLeft', 'marginRight'],
         marginY: ['marginTop', 'marginBottom'],
-        // border: ['borderWidth', 'borderStyle', 'borderColor'],
         typeSize: ['fontSize', 'lineHeight']
     }
 });
