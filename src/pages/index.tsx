@@ -19,7 +19,7 @@ const Home: NextPage = () => {
             </VStack>
             <Grid placeItems={'center'}>
                 <Text>Grid</Text>
-                <Grid gridTemplateColumns={'1fr 1fr 1fr;'} gap={'lg'}>
+                <Grid gridTemplateColumns={'1fr 1fr 1fr'} gap={'lg'}>
                     <Center flexDirection={'column'}>
                         <Text>Button with style extension</Text>
                         <Button

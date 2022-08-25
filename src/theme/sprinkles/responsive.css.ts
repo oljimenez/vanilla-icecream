@@ -59,7 +59,7 @@ const responsiveProperties = defineProperties({
             '1px solid yellow': '1px solid yellow',
             '1px solid green': '1px solid green'
         },
-        gridTemplateColumns: ['1fr 1fr 1fr;'],
+        gridTemplateColumns: ['1fr 1fr 1fr'],
         placeItems: ['start', 'center', 'end', 'justify']
     },
     shorthands: {
