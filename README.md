@@ -3,6 +3,6 @@
 First, run the development server:
 
 ```bash
-npm run dev
+run "yarn dev" to start development
 # or
-yarn dev
+run "yarn build" to build proyect
