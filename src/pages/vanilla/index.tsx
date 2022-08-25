@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import { Flex } from 'components/layout/flex';
 import React from 'react';
 import { Button } from 'components/interaction/button';
+import { Stack } from 'components/layout/stack';
 import { Grid } from 'components/layout/grid';
 
 const Home: NextPage = () => {
