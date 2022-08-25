@@ -5,6 +5,7 @@ import { Grid } from 'components/layout/grid';
 
 const Home: NextPage = () => (
     <VStack flexPlaceItems={'center'} itemSize={'fullViewport'} gap={'lg'}>
+        <h1>Build with Vanilla Extract Kit</h1>
         <VStack flexPlaceItems={'center'}>
             <p>Flexbox</p>
             <HStack flexPlaceItems={'center'} gap={'lg'}>
