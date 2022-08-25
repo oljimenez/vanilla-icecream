@@ -1,7 +1,8 @@
 import { createElement, ElementType, ReactNode } from 'react';
 import { RuntimeFn } from '@vanilla-extract/recipes/dist/declarations/src/types';
 import classNames from 'classnames';
-import { RecordProps } from 'theme/create/types';
+
+export type RecordProps = Record<string, unknown>;
 
 export const styleComponent = <S extends (...args: any) => any>(
     sprinklesFn: S,

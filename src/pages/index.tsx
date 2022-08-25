@@ -1,13 +1,27 @@
 import type { NextPage } from 'next';
-import Link from 'next/link';
-import { Flex } from 'components/layout/flex';
+import { HStack, VStack } from 'components/layout/stack';
+import { Button } from 'components/interaction';
+import { Grid } from 'components/layout/grid';
 
 const Home: NextPage = () => (
-    <Flex itemSize={'full'} placeItems={'center'} gap={'lg'}>
-        <Link href={{ pathname: '/vanilla' }}>
-            <button>Vanilla Extract</button>
-        </Link>
-    </Flex>
+    <VStack flexPlaceItems={'center'} itemSize={'fullViewport'} gap={'lg'}>
+        <VStack flexPlaceItems={'center'}>
+            <p>Flexbox</p>
+            <HStack flexPlaceItems={'center'} gap={'lg'}>
+                <Button variant={{ style: 'primary' }}>Primary</Button>
+                <Button variant={{ style: 'secondary' }}>Secondary</Button>
+                <Button variant={{ style: 'ternary' }}>Ternary</Button>
+            </HStack>
+        </VStack>
+        <Grid placeItems={'center'}>
+            <p>Grid</p>
+            <Grid gridTemplateColumns={'1fr 1fr 1fr;'} gap={'lg'}>
+                <Button variant={{ style: 'primary' }}>Primary</Button>
+                <Button variant={{ style: 'secondary' }}>Secondary</Button>
+                <Button variant={{ style: 'ternary' }}>Ternary</Button>
+            </Grid>
+        </Grid>
+    </VStack>
 );
 
 export default Home;

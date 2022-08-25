@@ -1,8 +1,18 @@
 import { RuntimeFn } from '@vanilla-extract/recipes/dist/declarations/src/types';
 import { RecipeVariants } from '@vanilla-extract/recipes';
 import { styleComponent } from './styleComponent';
-import { Props } from './types';
+import { VariantSelection } from '@vanilla-extract/recipes/dist/declarations/src/types';
 import { sprinkles } from 'theme/sprinkles';
+
+type Props<
+    S,
+    T,
+    V extends VariantSelection<{}> | undefined = never,
+    O extends keyof S = never
+> = Exclude<T, keyof S> &
+    Exclude<S, O> & {
+        variant?: V;
+    };
 
 type PropsType<T extends keyof JSX.IntrinsicElements> =
     JSX.IntrinsicElements[T];
