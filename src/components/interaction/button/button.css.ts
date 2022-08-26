@@ -1,13 +1,14 @@
-import {recipe} from '@vanilla-extract/recipes';
-import {vars} from 'theme/theme.css';
-import {style} from '@vanilla-extract/css';
+import { recipe } from '@vanilla-extract/recipes';
+import { vars } from 'theme/theme.css';
+import { style } from '@vanilla-extract/css';
 
 export const buttonVariants = recipe({
     base: {
         color: '#000000',
         padding: '0.5rem 2rem',
         borderRadius: '0.2rem',
-        fontSize: '1rem'
+        fontSize: '1rem',
+        border: 'unset'
     },
     variants: {
         style: {
