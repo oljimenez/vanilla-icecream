@@ -12,7 +12,7 @@ export const buttonVariants = recipe({
     variants: {
         style: {
             primary: {
-                backgroundColor: vars.color['error.200'],
+                backgroundColor: 'red',
                 boxShadow: '0 0 1rem #ff0000',
                 ':hover': {
                     backgroundColor: 'rgba(255,0,0,0.50)',
