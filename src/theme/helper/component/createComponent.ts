@@ -9,8 +9,8 @@ type Props<
     T,
     V extends VariantSelection<{}> | undefined = never,
     O extends keyof S = never
-> = Exclude<T, keyof S> &
-    Exclude<S, O> & {
+> = Omit<T, keyof S> &
+    Omit<S, O> & {
         variant?: V;
     };
 
