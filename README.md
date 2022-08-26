@@ -53,10 +53,10 @@ function that you create previously. It will return a React Component. Something
 ```
 
 Step 3:
-- Edit all the `sprinklesProperties` as you like, in this example you can find them
-in [“here”](https://github.com/oscarprogrammer1996/vanilla-kit/tree/main/src/theme/sprinkles/properties)
+- Edit all the `sprinklesProperties` as you like without need of edit the components.
+- The code result of this example you can find them in [“here”](https://github.com/oscarprogrammer1996/vanilla-kit/tree/main/src/theme/sprinkles/properties)
 
-Result: 
+Result React Component: 
 ```tsx
    <Box
         display={'flex'}
