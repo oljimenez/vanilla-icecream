@@ -4,12 +4,10 @@ import { styleComponent } from 'theme/helper';
 import { VariantSelection } from '@vanilla-extract/recipes/dist/declarations/src/types';
 import { sprinkles } from 'theme/sprinkles';
 
-type Props<
-    S,
+type Props<S, T, V extends VariantSelection<{}> | undefined = never> = Omit<
     T,
-    V extends VariantSelection<{}> | undefined = never,
-    O extends keyof S = never
-> = Omit<T, keyof S> &
+    keyof S
+> &
     S & {
         variant?: V;
     };
@@ -27,6 +25,7 @@ export const createComponentWithSprinkles = <S extends (...args: any) => any>(
         F extends RuntimeFn<{}> = RuntimeFn<{}>
     >(
         type: T,
+
         componentProps?: {
             defaultSprinkles?: Sprinkles;
             defaultStyle?: string;
