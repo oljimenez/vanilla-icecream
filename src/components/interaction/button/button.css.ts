@@ -1,6 +1,5 @@
 import { recipe } from '@vanilla-extract/recipes';
 import { vars } from 'theme/theme.css';
-import { style } from '@vanilla-extract/css';
 
 export const buttonVariants = recipe({
     base: {
@@ -41,9 +40,4 @@ export const buttonVariants = recipe({
     defaultVariants: {
         style: 'primary'
     }
-});
-
-export const buttonStyle = style({
-    padding: '1rem 3rem',
-    fontSize: '2rem'
 });

@@ -13,7 +13,9 @@ To start development mode:
 To build this project:
 - run "yarn build" or "npm run build"
 
-You can see an example react code in [“example”](https://oscar-vanilla-kit.vercel.app/src/pages/index.tsx)
+You can see an example react code in [“index.tsx”](https://oscar-vanilla-kit.vercel.app/src/pages/index.tsx)
+
+You can see an example of components in [“components”](https://oscar-vanilla-kit.vercel.app/src/components)
 
 Sorry this need some good docs but is a starter project for now,
 and i'm planning to convert it to a helper library
