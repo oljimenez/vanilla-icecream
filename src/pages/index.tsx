@@ -1,21 +1,18 @@
 import type { NextPage } from 'next';
 import { Button } from 'components/interaction';
-import { Flex, HStack, VStack } from 'components/layout';
+import { Flex, VStack } from 'components/layout';
 import { Text } from 'components/text';
-import { Box } from 'components/layout/box';
 
 const Home: NextPage = () => {
     //here your typescript
 
     return (
-        <VStack flexPlaceItems={'center'} itemSize={'fullViewport'} gap={'lg'}>
+        <VStack flexPlaceItems={'center'} itemSize={'fullViewport'} gap={'md'}>
             <h1>Build with Vanilla Kit</h1>
             <VStack flexPlaceItems={'center'}>
-                <Text color={{ darkMode: 'red', lightMode: 'blue' }}>
-                    Flexbox
-                </Text>
-
+                <Text color={'red'}>Flexbox</Text>
                 <Flex
+                    display={'grid'}
                     flexDirection={{ mobile: 'column', desktop: 'row' }}
                     flexPlaceItems={'center'}
                     gap={'lg'}
