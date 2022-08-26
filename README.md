@@ -13,9 +13,7 @@ To start development mode:
 To build this project:
 - run "yarn build" or "npm run build"
 
-You can see en example in [“example”](https://oscar-vanilla-kit.vercel.app/) 
-
-Go to src/pages/index.tsx to see the result code example for now
+You can see an example react code in [“example”](https://oscar-vanilla-kit.vercel.app/src/pages/index.tsx)
 
 Sorry this need some good docs but is a starter project for now,
 and i'm planning to convert it to a helper library
@@ -53,8 +51,8 @@ function that you create previously. It will return a React Component. Something
 ```
 
 Step 3:
-- Edit all the `sprinklesProperties` as you like without need of edit the components.
-- The code result of this example you can find them in [“here”](https://github.com/oscarprogrammer1996/vanilla-kit/tree/main/src/theme/sprinkles/properties)
+- Edit all the `sprinklesProperties` as you like without need of edit the components
+- The properties of this project you can find them in [“here”](https://github.com/oscarprogrammer1996/vanilla-kit/tree/main/src/theme/sprinkles/properties)
 
 Result React Component: 
 ```tsx
