@@ -1,14 +1,15 @@
 import type { NextPage } from 'next';
 import { Button } from 'components/interaction';
 import { Flex, VStack } from 'components/layout';
-import { Text } from 'components/text';
+import { Text } from 'components/text/Text';
+import { Heading } from 'components/text';
 
 const Home: NextPage = () => {
     //here your typescript
 
     return (
         <VStack flexPlaceItems={'center'} itemSize={'fullViewport'} gap={'md'}>
-            <h1>Build with Vanilla Kit</h1>
+            <Heading as={'h1'}>Build with Vanilla Kit</Heading>
             <VStack flexPlaceItems={'center'}>
                 <Text color={'red'}>Flexbox</Text>
                 <Flex

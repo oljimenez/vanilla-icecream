@@ -8,22 +8,24 @@ export const styleComponent = <S extends (...args: any) => any>(
     sprinklesFn: S,
     componentType: ElementType,
     children: ReactNode,
-    props: Object,
+    props: RecordProps,
     defaultStyle?: string,
     defaultSprinkles?: Parameters<S>[0],
     variantFn?: RuntimeFn<{}>
 ) => {
+    const { as, ...rest } = props;
+
     const { sprinklesProps, elementProps, variantProps } = extractParams(
         sprinklesFn,
         {
-            ...props,
+            ...rest,
             ...defaultSprinkles
         }
     );
     const { className, ...restProps } = elementProps;
 
     return createElement(
-        componentType,
+        as ? (as as string) : componentType,
         {
             className: classNames([
                 className,

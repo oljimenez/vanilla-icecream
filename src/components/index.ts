@@ -1,3 +1,3 @@
 export * from './interaction';
 export * from './layout';
-export * from './text';
+export * from './text/Text';
