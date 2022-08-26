@@ -48,6 +48,7 @@ Step 2:
 function that you create previously. It will return a React Component. Something like this 
 
 ```tsx
+   //Box now is a React Component and you can use it everywhere you want
   const Box = createComponent('div');
 ```
 
