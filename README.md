@@ -2,8 +2,7 @@
 
 To start locally you need "npm" and "node" in your machine
 
-ATTENTION "This proyect use vanilla-extract as base method of style" ATTENTION
-look at the docs for help https://vanilla-extract.style/
+ATTENTION "This project use [“vanilla-extract”](https://vanilla-extract.style/) as base method of style" ATTENTION
 
 To install dependencies:
 - run "yarn" or "npm install"
@@ -14,44 +13,50 @@ To start development mode:
 To build this project:
 - run "yarn build" or "npm run build"
 
-You can see en example in https://oscar-vanilla-kit.vercel.app/
+You can see en example in [“example”](https://oscar-vanilla-kit.vercel.app/) 
 
 Go to src/pages/index.tsx to see the result code example for now
 
 Sorry this need some good docs but is a starter project for now,
 and i'm planning to convert it to a helper library
 
-```bash
 
 # How to create component?
 
 Step 1:
-- Create a .ts file and call createComponentWithSprinkles(sprinkles) and
- passing ur "sprinkles" function result of "createSprinkles" from "vanilla-extract".
- It will return a function, let call him  "createComponent" that allow you to
+- Create a `.ts` file and call createComponentWithSprinkles(sprinkles) and
+ passing ur `sprinkles` function result of `createSprinkles` from "vanilla-extract".
+ It will return a function, let call him  `createComponent` that allow you to
  create custom React Components with all your sprinkles parameters as props.
- 
+
+```ts
  //your sprinkles function result
   const sprinkles = createSprinkles(
     responsiveProperties,
     colorProperties,
     unResponsiveProperties
 );
+```
 
+```ts
   //using "createComponentWithSprinkles" function to generate your magic function
    const createComponent = createComponentWithSprinkles(sprinkles);
+```
 
 Step 2:
-- Create a .tsx file for your component, example "Box.tsx" and call createComponent 
-function that you create previously. It will return a react component. Something like this 
+- Create a `.tsx` file for your component, example `Box.tsx` and call createComponent 
+function that you create previously. It will return a React Component. Something like this 
 
+```tsx
   const Box = createComponent('div');
+```
 
 Step 3:
-- Edit all the sprinklesProperties as you like, in this example you can found them
-in src/theme/sprinkles/properties folder
+- Edit all the `sprinklesProperties` as you like, in this example you can find them
+in [“here”](https://github.com/oscarprogrammer1996/vanilla-kit/tree/main/src/theme/sprinkles/properties)
 
 Result: 
+```tsx
    <Box
         display={'flex'}
         justifyContent={{ mobile: 'center', desktop: 'space-between' }}
@@ -61,7 +66,8 @@ Result:
         color={'error.200'}
     >
         Example
-    </Box>         
+    </Box>      
+```       
 
 
 
