@@ -79,6 +79,7 @@ Step 2.1:
         variantFn: componentVariants
    });
 ```
+- You can also mix them, but be "CAREFUL" because you can end up with some rewritten style
 
 Step 2.2:
 - The return component have 2 added props. One is `variant` and the other is `as`
