@@ -90,7 +90,7 @@ Step 2.1:
 
 Step 2.2:
 - The return component has 2 additional props in addition to the properties of your sprinkles 
-  and the default properties of the component. One is `variant` and the other is `as`.
+  and the default html properties of the component. One is `variant` and the other is `as`.
 - `variant` give you the ability to select the variant of the component
 - `as` give you the ability to change the type of the component. 
 
