@@ -2,7 +2,7 @@
 
 To start locally you need "npm" and "node" in your machine
 
-ATTENTION "This project use [“vanilla-extract”](https://vanilla-extract.style/) as base method of style" ATTENTION
+ATTENTION "This project use [vanilla-extract](https://vanilla-extract.style/) as base method of style" ATTENTION
 
 To install dependencies:
 - run "yarn" or "npm install"
@@ -13,9 +13,9 @@ To start development mode:
 To build this project:
 - run "yarn build" or "npm run build"
 
-You can see an example react code in [“index.tsx”](https://oscar-vanilla-kit.vercel.app/src/pages/index.tsx)
+You can see an example react code in [index.tsx](https://oscar-vanilla-kit.vercel.app/src/pages/index.tsx)
 
-You can see an example of components in [“components”](https://oscar-vanilla-kit.vercel.app/src/components)
+You can see an example of components in [components](https://oscar-vanilla-kit.vercel.app/src/components)
 
 Sorry this need some good docs but is a starter project for now,
 and i'm planning to convert it to a helper library
@@ -100,7 +100,7 @@ Step 2.2:
 
 Step 3:
 - Edit all the `sprinklesProperties` as you like without need of edit the components
-- The properties of this project you can find them in [“here”](https://github.com/oscarprogrammer1996/vanilla-kit/tree/main/src/theme/sprinkles/properties)
+- The properties of this project you can find them in [here](https://github.com/oscarprogrammer1996/vanilla-kit/tree/main/src/theme/sprinkles/properties)
 
 Result React Component: 
 ```tsx
