@@ -74,7 +74,8 @@ Step 2.1:
         //the nice side of this approach is that it gives you the typing of your sprinkles props :).
         defaultSprinkles: {
            display: 'flex',
-           flexPlaceItems: 'center'
+           flexPlaceItems: 'center',
+           background: { lightMode: 'primary.100', darkMode: 'primary.100' }
         },
    
         //In this prop you can pass the return function that vanilla-extract give you when you create
