@@ -45,11 +45,51 @@ Step 1:
 
 Step 2:
 - Create a `.tsx` file for your component, example `Box.tsx` and call createComponent 
-function that you create previously. It will return a React Component. Something like this 
+function that you create previously. It will return a React Component. Something like this.
 
 ```tsx
    //Box now is a React Component and you can use it everywhere you want
   const Box = createComponent('div');
+```
+
+Step 2.1:
+- To this function you can pass others props for `Default Styles`as second parameter.
+- This prop give you 3-4 ways of give you apply default styles to your component.
+
+```tsx
+   //Example of build a Center component
+  const Center = createComponent('div', {
+        //defaultStyle receives a string that is used to apply styles to the className prop.
+        //You can also pass your style results to the vanilla-extract style function.
+        //You can use this prop to reset component styles as you want.
+        defaultStyle: 'd-flex center-items',
+                    //or
+        defaultStyle: componentStyle,
+   
+        //defaultSprinkles allow you to define default sprinkles props for your component,
+        //the nice side of this approach is that it gives you the typing of your sprinkles props :).
+        defaultSprinkles: {
+           display: 'flex',
+           flexPlaceItems: 'center'
+        },
+   
+        //In this prop you can pass the return function that vanilla-extract give you when you create
+        // a new variant with the vanilla-extract recipe function. This give you a variant prop that
+        // you can use to choose the variant of the component.
+        variantFn: componentVariants
+   });
+```
+
+Step 2.2:
+- The return component have 2 added props. One is `variant` and the other is `as`
+- `variant` give you the ability to select the variant of the component
+- `as` give you the ability to change the type of the component. 
+
+```tsx
+        //Example of as and variant props
+        <Heading as={'h1'} variant={{ style:'bigText', color:'redText' }} >
+            Build with Vanilla Kit
+        </Heading>
 ```
 
 Step 3:
