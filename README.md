@@ -79,7 +79,7 @@ Step 2.1:
         },
    
         //In this prop you can pass the return function that vanilla-extract give you when you create
-        // a new variant with the vanilla-extract recipe function. This give you a variant prop that
+        // a new variants with the vanilla-extract recipe function. This give you a variant prop that
         // you can use to choose the variant of the component.
         variantFn: componentVariants
    });
