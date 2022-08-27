@@ -45,15 +45,19 @@ Step 1:
 
 Step 2:
 - Create a `.tsx` file for your component, example `Box.tsx` and call createComponent 
-function that you create previously. It will return a React Component. Something like this.
-
+ function that you create previously. It will return a React Component. Something like this.
+- This function need a required parameter called `type`, that allow you to define the type 
+ of the component that you are creating. This allows you to create all type of HTML component
+ and one give your component the native props of that type of component.
+- An example is html `button` vs `div`, `button` element have it a native prop called type 
+ and `div` does not have it
 ```tsx
    //Box now is a React Component and you can use it everywhere you want
   const Box = createComponent('div');
 ```
 
 Step 2.1:
-- To this function you can pass others props for `Default Styles`as second parameter. 
+- To this function you can pass others props for `Default Styles`as second optional parameter. 
 - This prop give you 3 - 4 ways of  you apply default styles to your component.
 
 ```tsx
