@@ -20,6 +20,8 @@ You can see an example of components in [components](https://oscar-vanilla-kit.v
 Sorry this need some good docs but is a starter project for now,
 and i'm planning to convert it to a helper library
 
+The goal of this is build some functions to automatize some work when you work with vanilla-extract.
+For now only have a `createComponentWithSprinkles` function that allow you to create custom react components.
 
 # How to create component?
 
