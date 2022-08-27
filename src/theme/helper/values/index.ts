@@ -1,2 +1,2 @@
 export * from './values';
-export * from './scales';
+export * from './space';

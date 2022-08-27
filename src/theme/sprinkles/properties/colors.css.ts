@@ -8,7 +8,8 @@ export const colorProperties = defineProperties({
     },
     defaultCondition: ['lightMode', 'darkMode'],
     properties: {
-        color: vars.color,
-        background: vars.color
+        color: vars.colors,
+        background: vars.colors,
+        borderColor: vars.colors
     }
 });
