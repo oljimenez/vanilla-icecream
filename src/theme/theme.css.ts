@@ -1,7 +1,7 @@
 import { createGlobalTheme } from '@vanilla-extract/css';
 import { breakpointScales } from 'theme/helper/values/scales';
 import { createValues } from 'theme/helper/values/values';
-import { createColors } from 'theme/helper/values/colors';
+import { colors } from 'theme/values';
 
 const breakpointValues = {
     none: '0px',
@@ -32,23 +32,9 @@ const heightVars = {
     fullViewport: '100vh'
 };
 
-export const colors = createColors({
-    white: '#fff',
-    black: '#000',
-    error: {
-        100: '#F11122',
-        200: '#E01020',
-        300: '#B90F1C',
-        400: '#250606'
-    }
-});
-
 export const vars = createGlobalTheme(':root', {
     space: breakpointValues,
-    color: {
-        white: '#fff',
-        black: '#000'
-    },
+    color: colors,
     breakpointValues,
     fontFamily: {
         body: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'

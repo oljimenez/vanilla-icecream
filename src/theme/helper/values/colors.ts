@@ -5,16 +5,20 @@ type Color = RGB | RGBA | HEX;
 
 type ColorRecord = Record<string, string | Record<number, Color>>;
 
-type SecondNestedKeyOf<ObjectType extends ColorRecord> = {
-    [Key in keyof ObjectType &
-        (string | number)]: ObjectType[Key] extends string ? `${Key}` : never;
-}[keyof ObjectType & (string | number)];
+type ReturnColor<ObjectType extends ColorRecord> = {
+    [Key in NestedKeyOf<ObjectType>]: Key;
+};
 
 type NestedKeyOf<ObjectType extends ColorRecord> = {
     [Key in keyof ObjectType &
         (string | number)]: ObjectType[Key] extends ColorRecord
         ? `${Key}.${SecondNestedKeyOf<ObjectType[Key]>}`
         : `${Key}`;
+}[keyof ObjectType & (string | number)];
+
+type SecondNestedKeyOf<ObjectType extends ColorRecord> = {
+    [Key in keyof ObjectType &
+        (string | number)]: ObjectType[Key] extends string ? `${Key}` : never;
 }[keyof ObjectType & (string | number)];
 
 export const createColors = <T extends ColorRecord>(
@@ -33,5 +37,5 @@ export const createColors = <T extends ColorRecord>(
             });
         }
         return prev;
-    }, returnObj) as unknown as NestedKeyOf<T>;
+    }, returnObj) as unknown as ReturnColor<T>;
 };

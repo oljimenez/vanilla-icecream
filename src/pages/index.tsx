@@ -3,11 +3,8 @@ import { Button } from 'components/interaction';
 import { Flex, VStack } from 'components/layout';
 import { Text } from 'components/text/Text';
 import { Heading } from 'components/text';
-import { colors } from 'theme/theme.css';
 
 const Home: NextPage = () => {
-    console.log(colors.);
-
     return (
         <VStack flexPlaceItems={'center'} itemSize={'fullViewport'} gap={'md'}>
             <Heading as={'h1'}>Build with Vanilla Kit</Heading>
