@@ -54,7 +54,7 @@ function that you create previously. It will return a React Component. Something
 
 Step 2.1:
 - To this function you can pass others props for `Default Styles`as second parameter.
-- This prop give you 3-4 ways of give you apply default styles to your component.
+- This prop give you 3 - 4 ways of give you apply default styles to your component.
 
 ```tsx
    //Example of build a Center component
