@@ -53,7 +53,7 @@ function that you create previously. It will return a React Component. Something
 ```
 
 Step 2.1:
-- To this function you can pass others props for `Default Styles`as second parameter.
+- To this function you can pass others props for `Default Styles`as second parameter. 
 - This prop give you 3 - 4 ways of  you apply default styles to your component.
 
 ```tsx
@@ -82,7 +82,8 @@ Step 2.1:
 - You can also mix them, but be "CAREFUL" because you can end up with some rewritten style
 
 Step 2.2:
-- The return component have 2 added props. One is `variant` and the other is `as`
+- The return component has 2 additional props in addition to the properties of your sprinkles 
+  and the default properties of the component. One is `variant` and the other is `as`.
 - `variant` give you the ability to select the variant of the component
 - `as` give you the ability to change the type of the component. 
 
