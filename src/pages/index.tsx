@@ -14,7 +14,7 @@ const Home: NextPage = () => {
                     display={'grid'}
                     flexDirection={{ mobile: 'column', desktop: 'row' }}
                     flexPlaceItems={'center'}
-                    gap={'lg'}
+                    gap={'md'}
                 >
                     <Button variant={{ style: 'primary' }}>Primary</Button>
                     <Button variant={{ style: 'secondary' }}>Secondary</Button>
