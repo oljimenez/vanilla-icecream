@@ -1,6 +1,5 @@
 import { createElement, ElementType, ReactNode } from 'react';
 import { RuntimeFn } from '@vanilla-extract/recipes/dist/declarations/src/types';
-import classNames from 'classnames';
 
 export type RecordProps = Record<string, unknown>;
 
@@ -27,12 +26,14 @@ export const styleComponent = <S extends (...args: any) => any>(
     return createElement(
         as ? (as as string) : componentType,
         {
-            className: classNames([
+            className: [
                 className,
                 sprinklesFn(sprinklesProps),
                 variantFn ? variantFn(variantProps) : '',
                 defaultStyle
-            ]),
+            ]
+                .filter((value) => typeof value !== 'undefined' && value !== '')
+                .join(', '),
             ...restProps
         },
         children
