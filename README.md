@@ -1,32 +1,43 @@
-## Getting Started
+# What is react-vanilla-kit?
 
-To start locally you need "npm" and "node" in your machine
+This package is for add some functionalities to vanilla-extract.
+This is the list of functionalities:
+- createComponentWithSprinkles(...)
 
-ATTENTION "This project use [vanilla-extract](https://vanilla-extract.style/) as base method of style" ATTENTION
+## How to install?
 
-To install dependencies:
-- run "yarn" or "npm install"
+Install the package:
 
-To start development mode:
-- run "yarn dev" or "npm run dev" 
+```
+$ npm install react-vanilla-kit
+   #or
+$ yarn add react-vanilla-kit
+```
 
-To build this project:
-- run "yarn build" or "npm run build"
+- This package has strong dependencies from `react`.
 
-You can see an example react code in [index.tsx](https://oscar-vanilla-kit.vercel.app/src/pages/index.tsx)
+```
+$ npm install react
+#or
+$ yarn add react
+```
 
-You can see an example of components in [components](https://oscar-vanilla-kit.vercel.app/src/components)
+- You also have to install `vanilla-extract` packages has dev dependencies.
+`@vanilla-extract/css`,`@vanilla-extract/sprinkles`" and `@vanilla-extract/recipes`
 
-Sorry this need some good docs but is a starter project for now,
-and i'm planning to convert it to a helper library
+```
+$ npm install -D @vanilla-extract/css @vanilla-extract/sprinkles @vanilla-extract/recipes
+#or
+$ yarn add -D @vanilla-extract/css @vanilla-extract/sprinkles @vanilla-extract/recipes
+```
 
-The goal of this is build some functions to automatize some work when you work with vanilla-extract.
-For now only have a `createComponentWithSprinkles` function that allow you to create custom react components.
+You can see an example of components build with react-vanilla-kit in [components](https://github.com/oscarprogrammer1996/vanilla-kit/src/components)
+
 
 # How to create component?
 
 Step 1:
-- Create a `.ts` file and call createComponentWithSprinkles(sprinkles) and
+- Create a `.ts` file and call `createComponentWithSprinkles(sprinkles)` and
  passing ur `sprinkles` function result of `createSprinkles` from "vanilla-extract".
  It will return a function, let call him  `createComponent` that allow you to
  create custom React Components with all your sprinkles parameters as props.
