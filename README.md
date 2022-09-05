@@ -4,15 +4,15 @@
 
 A utility library for 🧁[vanilla-extract][vanilla-extract].
 - [🍦 Vanilla Cone](#-vanilla-cone)
- - [How to Install](#how-to-install)
- - [Advanced Functions](#advanced-functions)
-  - [createComponentWithSprinkles](#createcomponentwithsprinklessprinkles)
- - [Utility Functions](#utility-functions )
-  - [createColors](#createcolors)
- - [API](#api)
-  - [createComponentWithSprinkles(sprinkles)](#--createcomponentwithsprinkles)
-  - [createColors(colorRecord)](#--createcolors)
- - [Thanks](#thanks)
+  - [How to Install](#how-to-install)
+  - [Advanced Functions](#advanced-functions)
+    - [createComponentWithSprinkles](#createcomponentwithsprinklessprinkles)
+  - [Utility Functions](#utility-functions )
+    - [createColors](#createcolors)
+  - [API](#api)
+    - [createComponentWithSprinkles(sprinkles)](#--createcomponentwithsprinkles)
+    - [createColors(colorRecord)](#--createcolors)
+  - [Thanks](#thanks)
 
 
 ## How to install?
