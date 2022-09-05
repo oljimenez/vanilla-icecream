@@ -252,11 +252,11 @@ export const vars = createGlobalTheme(':root', {
 ### - createComponentWithSprinkles
 ```.ts
 createComponentWithAtoms: (sprinkles: SprinklesFn) => 
-(type: JSX.IntrinsicElements, defaultStyles?: { 
- defaultClassName?: string,
- defaultSprinkles?: Parameters<typeof sprinkles>[0],
- variantFn?: RecipeVariants 
-})
+    (type: JSX.IntrinsicElements, defaultStyles?: { 
+         defaultClassName?: string,
+         defaultSprinkles?: Parameters<typeof sprinkles>[0],
+         variantFn?: RecipeVariants 
+    })
  => ReactElement
 ```
 
