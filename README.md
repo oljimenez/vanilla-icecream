@@ -263,7 +263,7 @@ createComponentWithAtoms: (sprinkles: SprinklesFn) =>
 ### - createColors
 ```.ts
 createColors: (colorRecord: Record<string, string | Record<number, Color>>) => 
-Record<string, Color>
+    Record<string, Color>
 
 type Color = RGB | RGBA | HEX | HSV;
 
