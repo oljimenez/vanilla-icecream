@@ -3,6 +3,7 @@ import { Button } from 'components/interaction';
 import { Flex, VStack } from 'components/layout';
 import { Text } from 'components/text/Text';
 import { Heading } from 'components/text';
+import { Box } from 'components/layout/box';
 
 const Home: NextPage = () => {
     return (
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
             <VStack flexPlaceItems={'center'}>
                 <Text color={'black'}>Flexbox</Text>
                 <Flex
+                    background={'neutral.900'}
                     display={'grid'}
                     flexDirection={{ mobile: 'column', desktop: 'row' }}
                     flexPlaceItems={'center'}

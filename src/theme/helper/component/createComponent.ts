@@ -1,8 +1,9 @@
-import { RuntimeFn } from '@vanilla-extract/recipes/dist/declarations/src/types';
+import {
+    RuntimeFn,
+    VariantSelection
+} from '@vanilla-extract/recipes/dist/declarations/src/types';
 import { RecipeVariants } from '@vanilla-extract/recipes';
 import { styleComponent } from 'theme/helper';
-import { VariantSelection } from '@vanilla-extract/recipes/dist/declarations/src/types';
-import { sprinkles } from 'theme/sprinkles';
 
 type Props<S, T, V extends VariantSelection<{}> | undefined = never> = Omit<
     T,
@@ -26,9 +27,9 @@ export const createComponentWithSprinkles = <S extends (...args: any) => any>(
         F extends RuntimeFn<{}> = RuntimeFn<{}>
     >(
         type: T,
-        componentProps?: {
+        defaultStyles?: {
             defaultSprinkles?: Sprinkles;
-            defaultStyle?: string;
+            defaultClassName?: string;
             variantFn?: F;
         }
     ) => {
@@ -41,12 +42,10 @@ export const createComponentWithSprinkles = <S extends (...args: any) => any>(
                 type,
                 children,
                 props,
-                componentProps?.defaultStyle,
-                componentProps?.defaultSprinkles,
-                componentProps?.variantFn
+                defaultStyles?.defaultClassName,
+                defaultStyles?.defaultSprinkles,
+                defaultStyles?.variantFn
             );
         };
     };
 };
-
-export const createComponent = createComponentWithSprinkles(sprinkles);

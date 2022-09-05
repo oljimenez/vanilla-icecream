@@ -1,7 +1,8 @@
 type RGB = `rgb(${number}, ${number}, ${number})`;
+type HSV = `hsl(${number}, ${number}%, ${number}%)`;
 type RGBA = `rgba(${number}, ${number}, ${number}, ${number})`;
 type HEX = `#${string}`;
-type Color = RGB | RGBA | HEX;
+type Color = RGB | RGBA | HEX | HSV;
 
 type ColorRecord = Record<string, string | Record<number, Color>>;
 
