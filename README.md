@@ -26,7 +26,7 @@ $ yarn add vanilla-cake
    #or
 $ pnpm i vanilla-cake
 ```
-> This packages is dedicated to use with `react` and `vanilla-extract`. But in the future can be adpated to use with others framworks.
+> This package is dedicated to use with `react` and `vanilla-extract`. But in the future can be adapted to use with others framework.
 
 
 ### Define your atoms
