@@ -1,9 +1,9 @@
-# 🍦 Vanilla Cone
+# 🍧 Vanilla Cone
 
 # What is vanilla-cone?
 
 A utility library for 🧁[vanilla-extract][vanilla-extract].
-- [🍦 Vanilla Cone](#-vanilla-cone)
+- [🍧 Vanilla Cone](#-vanilla-cone)
   - [How to Install](#how-to-install)
   - [Advanced Functions](#advanced-functions)
     - [createComponentWithSprinkles](#createcomponentwithsprinklessprinkles)
