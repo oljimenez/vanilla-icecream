@@ -1,0 +1,1 @@
+export { createComponentWithSprinkles } from './createComponent';

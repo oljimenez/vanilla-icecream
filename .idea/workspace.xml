@@ -2,80 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70433fea-469d-48b5-90d4-07f5553f4ecc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/web/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/turbo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/.babelrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/.prettierrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/next-env.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/package/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/dist/create/createComponent.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package/dist/create/createComponent.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/dist/create/createComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/package/dist/create/createComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/dist/create/createComponent.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/package/dist/create/createComponent.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/src/create/createComponent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package/src/create/createComponent.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/package/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/public/vercel.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/interaction/button/button.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/interaction/button/button.css.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/interaction/button/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/interaction/button/button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/interaction/button/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/interaction/button/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/interaction/image/Image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/interaction/image/Image.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/interaction/image/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/interaction/image/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/interaction/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/interaction/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/interaction/input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/interaction/input/Input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/interaction/input/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/interaction/input/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/box/Box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/box/Box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/box/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/box/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/center/Center.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/center/Center.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/center/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/center/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/flex/Flex.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/flex/Flex.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/flex/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/flex/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/grid/Grid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/grid/Grid.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/grid/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/grid/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/stack/HStack/HStack.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/stack/HStack/HStack.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/stack/HStack/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/stack/HStack/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/stack/VStack/VStack.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/stack/VStack/VStack.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/stack/VStack/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/stack/VStack/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/stack/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/stack/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/text/Heading/Heading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/text/Heading/Heading.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/text/Heading/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/text/Heading/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/text/Text/Text.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/text/Text/Text.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/text/Text/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/text/Text/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/text/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/text/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/global.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/global.css.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/helper/component/createComponent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/helper/component/createComponent.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/helper/component/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/helper/component/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/helper/component/styleComponent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/helper/component/styleComponent.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/helper/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/helper/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/helper/values/colors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/helper/values/colors.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/helper/values/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/helper/values/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/helper/values/space.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/helper/values/space.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/helper/values/values.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/helper/values/values.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/sprinkles/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/sprinkles/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/sprinkles/properties/colors.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/sprinkles/properties/colors.css.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/sprinkles/properties/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/sprinkles/properties/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/sprinkles/properties/responsive.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/sprinkles/properties/responsive.css.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/sprinkles/properties/unresponsive.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/sprinkles/properties/unresponsive.css.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/sprinkles/sprinkles.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/sprinkles/sprinkles.css.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/theme.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/theme.css.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/values/colors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/values/colors.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/values/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/values/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/values/spaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/values/spaces.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/.idea/prettier.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/.idea/vanilla-kit.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/.prettierrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/dist/create/createComponent.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/dist/create/createComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/dist/create/createComponent.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/dist/create/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/dist/create/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/dist/create/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/dist/create/styleComponent.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/dist/create/styleComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/dist/create/styleComponent.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/dist/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/dist/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/dist/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/src/create/createComponent.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/src/create/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/src/create/styleComponent.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/src/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/yarn-error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +99,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Oscar Jiménez/WebstormProjects/vanilla-cone",
+    "last_opened_file_path": "C:/Users/Oscar Jiménez/WebstormProjects/vanilla-cone/packages",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -156,18 +114,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Oscar Jiménez\WebstormProjects\vanilla-cone\packages" />
       <recent name="C:\Users\Oscar Jiménez\WebstormProjects\vanilla-cone" />
       <recent name="C:\Users\Oscar Jiménez\WebstormProjects\vanilla-cone\lib\src\create" />
       <recent name="C:\Users\Oscar Jiménez\WebstormProjects\react-vanilla-kit" />
       <recent name="C:\Users\Oscar Jiménez\WebstormProjects\nextjs-kit\src\components\text\Heading" />
-      <recent name="C:\Users\Oscar Jiménez\WebstormProjects\nextjs-kit\src\components\text" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Oscar Jiménez\WebstormProjects\vanilla-cone\packages" />
       <recent name="C:\Users\Oscar Jiménez\WebstormProjects\vanilla-cone\apps\web" />
       <recent name="C:\Users\Oscar Jiménez\WebstormProjects\vanilla-cone\src" />
       <recent name="C:\Users\Oscar Jiménez\WebstormProjects\nextjs-kit\src\components\text\Text" />
       <recent name="C:\Users\Oscar Jiménez\WebstormProjects\nextjs-kit\src\theme\sprinkles\properties" />
-      <recent name="C:\Users\Oscar Jiménez\WebstormProjects\nextjs-kit\src\theme\sprinkles" />
     </key>
   </component>
   <component name="RunManager">
@@ -288,7 +246,7 @@
       <workItem from="1662608257794" duration="2090000" />
       <workItem from="1662611405971" duration="35000" />
       <workItem from="1662611447418" duration="15000" />
-      <workItem from="1662611473216" duration="1633000" />
+      <workItem from="1662611473216" duration="2015000" />
     </task>
     <servers />
   </component>
