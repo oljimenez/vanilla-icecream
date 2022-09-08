@@ -7,9 +7,13 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
+    "dev": "preconstruct dev",
+    "build": "preconstruct build",
+    "watch": "preconstruct watch",
+    "postinstall": "preconstruct dev",
+    "turbo:build": "turbo run build",
+    "turbo:dev": "turbo run dev --parallel",
+    "turbo:lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
@@ -19,6 +23,15 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "dependencies": {},
-  "packageManager": "yarn@1.22.19"
+  "packageManager": "yarn@1.22.19",
+  "dependencies": {
+    "@babel/core": "^7.19.0",
+    "@babel/preset-env": "^7.19.0",
+    "@preconstruct/cli": "^2.2.1"
+  },
+  "preconstruct": {
+    "packages": [
+      "packages/*"
+    ]
+  }
 }
