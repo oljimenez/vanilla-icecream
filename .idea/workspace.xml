@@ -3,37 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="70433fea-469d-48b5-90d4-07f5553f4ecc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/.idea/prettier.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/.idea/vanilla-kit.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/.prettierrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/dist/create/createComponent.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/dist/create/createComponent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/dist/create/createComponent.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/dist/create/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/dist/create/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/dist/create/index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/dist/create/styleComponent.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/dist/create/styleComponent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/dist/create/styleComponent.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/dist/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/dist/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/dist/index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/src/create/createComponent.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/src/create/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/src/create/styleComponent.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/src/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/yarn-error.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,11 +91,11 @@
       <recent name="C:\Users\Oscar Jiménez\WebstormProjects\nextjs-kit\src\components\text\Heading" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Oscar Jiménez\WebstormProjects\vanilla-cone\packages\lib" />
       <recent name="C:\Users\Oscar Jiménez\WebstormProjects\vanilla-cone\packages" />
       <recent name="C:\Users\Oscar Jiménez\WebstormProjects\vanilla-cone\apps\web" />
       <recent name="C:\Users\Oscar Jiménez\WebstormProjects\vanilla-cone\src" />
       <recent name="C:\Users\Oscar Jiménez\WebstormProjects\nextjs-kit\src\components\text\Text" />
-      <recent name="C:\Users\Oscar Jiménez\WebstormProjects\nextjs-kit\src\theme\sprinkles\properties" />
     </key>
   </component>
   <component name="RunManager">
@@ -246,7 +216,7 @@
       <workItem from="1662608257794" duration="2090000" />
       <workItem from="1662611405971" duration="35000" />
       <workItem from="1662611447418" duration="15000" />
-      <workItem from="1662611473216" duration="2015000" />
+      <workItem from="1662611473216" duration="2313000" />
     </task>
     <servers />
   </component>
