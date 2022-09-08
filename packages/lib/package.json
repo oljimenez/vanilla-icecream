@@ -16,11 +16,11 @@
     "react",
     "utils"
   ],
-  "author": "Oscar Luis Jiménez oscarprogrammer1996@gmail.com",
+  "author": "Oscar Luis Jiménez oljimenez.prog@gmail.com",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oscarprogrammer1996/vanilla-cone"
+    "url": "git+https://github.com/oljimenez/vanilla-cone"
   },
   "devDependencies": {
     "@types/react": "^18.0.18",
