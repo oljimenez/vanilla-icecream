@@ -7,7 +7,7 @@ import { Heading } from 'components/text';
 const Home: NextPage = () => {
     return (
         <VStack flexPlaceItems={'center'} itemSize={'fullViewport'} gap={'md'}>
-            <Heading as={'h1'}>Build with Vanilla Kit</Heading>
+            <Heading as={'h1'}>Build with Vanilla Cone</Heading>
             <VStack flexPlaceItems={'center'}>
                 <Text color={'error.200'}>Flexbox</Text>
                 <Flex
