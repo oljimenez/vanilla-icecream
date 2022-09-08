@@ -34,4 +34,6 @@ yarn-error.log*
 # turbo
 .turbo
 
+#idea
 .idea
+.idea/workspace.xml
