@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="70433fea-469d-48b5-90d4-07f5553f4ecc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/apps/web/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/web/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/turbo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/.prettierrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/next-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/package/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/dist/create/createComponent.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package/dist/create/createComponent.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/dist/create/createComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/package/dist/create/createComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/dist/create/createComponent.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/package/dist/create/createComponent.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/src/create/createComponent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/package/src/create/createComponent.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/package/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/public/vercel.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/interaction/button/button.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/interaction/button/button.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/interaction/button/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/interaction/button/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/interaction/button/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/interaction/button/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/interaction/image/Image.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/interaction/image/Image.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/interaction/image/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/interaction/image/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/interaction/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/interaction/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/interaction/input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/interaction/input/Input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/interaction/input/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/interaction/input/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/box/Box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/box/Box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/box/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/box/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/center/Center.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/center/Center.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/center/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/center/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/flex/Flex.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/flex/Flex.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/flex/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/flex/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/grid/Grid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/grid/Grid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/grid/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/grid/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/stack/HStack/HStack.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/stack/HStack/HStack.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/stack/HStack/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/stack/HStack/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/stack/VStack/VStack.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/stack/VStack/VStack.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/stack/VStack/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/stack/VStack/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/stack/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/layout/stack/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text/Heading/Heading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/text/Heading/Heading.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text/Heading/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/text/Heading/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text/Text/Text.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/text/Text/Text.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text/Text/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/text/Text/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/components/text/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/global.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/global.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/helper/component/createComponent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/helper/component/createComponent.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/helper/component/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/helper/component/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/helper/component/styleComponent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/helper/component/styleComponent.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/helper/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/helper/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/helper/values/colors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/helper/values/colors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/helper/values/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/helper/values/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/helper/values/space.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/helper/values/space.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/helper/values/values.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/helper/values/values.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/sprinkles/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/sprinkles/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/sprinkles/properties/colors.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/sprinkles/properties/colors.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/sprinkles/properties/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/sprinkles/properties/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/sprinkles/properties/responsive.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/sprinkles/properties/responsive.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/sprinkles/properties/unresponsive.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/sprinkles/properties/unresponsive.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/sprinkles/sprinkles.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/sprinkles/sprinkles.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/theme.css.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/theme.css.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/values/colors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/values/colors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/values/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/values/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/values/spaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/theme/values/spaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="package.json" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1658379198" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="development" />
+                    <option name="lastUsedInstant" value="1656972453" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2BTdPl1zFERD8C4VMIjJsPv9kAc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Oscar Jiménez/WebstormProjects/vanilla-cone",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Oscar Jiménez\\WebstormProjects\\vanilla-cone\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "C:\\Users\\Oscar Jiménez\\WebstormProjects\\vanilla-cone\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Oscar Jiménez\WebstormProjects\vanilla-cone" />
+      <recent name="C:\Users\Oscar Jiménez\WebstormProjects\vanilla-cone\lib\src\create" />
+      <recent name="C:\Users\Oscar Jiménez\WebstormProjects\react-vanilla-kit" />
+      <recent name="C:\Users\Oscar Jiménez\WebstormProjects\nextjs-kit\src\components\text\Heading" />
+      <recent name="C:\Users\Oscar Jiménez\WebstormProjects\nextjs-kit\src\components\text" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Oscar Jiménez\WebstormProjects\vanilla-cone\apps\web" />
+      <recent name="C:\Users\Oscar Jiménez\WebstormProjects\vanilla-cone\src" />
+      <recent name="C:\Users\Oscar Jiménez\WebstormProjects\nextjs-kit\src\components\text\Text" />
+      <recent name="C:\Users\Oscar Jiménez\WebstormProjects\nextjs-kit\src\theme\sprinkles\properties" />
+      <recent name="C:\Users\Oscar Jiménez\WebstormProjects\nextjs-kit\src\theme\sprinkles" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70433fea-469d-48b5-90d4-07f5553f4ecc" name="Changes" comment="" />
+      <created>1656933986926</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656933986926</updated>
+      <workItem from="1656933988237" duration="49000" />
+      <workItem from="1656934040253" duration="18472000" />
+      <workItem from="1656969793775" duration="3258000" />
+      <workItem from="1657025796150" duration="7000" />
+      <workItem from="1657103529959" duration="24000" />
+      <workItem from="1657199951390" duration="24000" />
+      <workItem from="1657199981992" duration="238000" />
+      <workItem from="1657654706291" duration="3597000" />
+      <workItem from="1657658856299" duration="1845000" />
+      <workItem from="1657668326589" duration="5813000" />
+      <workItem from="1657874973157" duration="171000" />
+      <workItem from="1657875364029" duration="3185000" />
+      <workItem from="1657936912079" duration="9673000" />
+      <workItem from="1657963463167" duration="7448000" />
+      <workItem from="1658017926203" duration="622000" />
+      <workItem from="1658030001391" duration="964000" />
+      <workItem from="1658040600674" duration="1786000" />
+      <workItem from="1658043396190" duration="42000" />
+      <workItem from="1658107418011" duration="55000" />
+      <workItem from="1658112415806" duration="405000" />
+      <workItem from="1658117046424" duration="1430000" />
+      <workItem from="1658121849185" duration="1341000" />
+      <workItem from="1658135652192" duration="605000" />
+      <workItem from="1658180194108" duration="1379000" />
+      <workItem from="1658194131023" duration="5584000" />
+      <workItem from="1658296130264" duration="9589000" />
+      <workItem from="1658366676020" duration="21384000" />
+      <workItem from="1658473574252" duration="21305000" />
+      <workItem from="1658575327562" duration="2536000" />
+      <workItem from="1658668612894" duration="63000" />
+      <workItem from="1659368656731" duration="727000" />
+      <workItem from="1659371338291" duration="173000" />
+      <workItem from="1659406152012" duration="628000" />
+      <workItem from="1659443073475" duration="29000" />
+      <workItem from="1659555839302" duration="3187000" />
+      <workItem from="1659716738446" duration="13000" />
+      <workItem from="1659724148261" duration="2038000" />
+      <workItem from="1659727159034" duration="55000" />
+      <workItem from="1659728755024" duration="90000" />
+      <workItem from="1659728956417" duration="841000" />
+      <workItem from="1659731381902" duration="526000" />
+      <workItem from="1659731920250" duration="1342000" />
+      <workItem from="1659924414157" duration="849000" />
+      <workItem from="1659925274791" duration="264000" />
+      <workItem from="1659925552972" duration="44000" />
+      <workItem from="1659925602508" duration="7000" />
+      <workItem from="1659925622430" duration="455000" />
+      <workItem from="1660112988377" duration="58000" />
+      <workItem from="1660113050624" duration="897000" />
+      <workItem from="1660338703775" duration="4348000" />
+      <workItem from="1660424503374" duration="8227000" />
+      <workItem from="1660511045074" duration="122000" />
+      <workItem from="1660553276843" duration="6048000" />
+      <workItem from="1660610278651" duration="627000" />
+      <workItem from="1660642905020" duration="28668000" />
+      <workItem from="1660721949309" duration="7000" />
+      <workItem from="1660818475333" duration="2004000" />
+      <workItem from="1660881874929" duration="1257000" />
+      <workItem from="1660883189079" duration="5233000" />
+      <workItem from="1660911647196" duration="380000" />
+      <workItem from="1660912670134" duration="277000" />
+      <workItem from="1660981489394" duration="859000" />
+      <workItem from="1660986180342" duration="1741000" />
+      <workItem from="1661001634544" duration="244000" />
+      <workItem from="1661001964682" duration="574000" />
+      <workItem from="1661002557316" duration="6815000" />
+      <workItem from="1661071181592" duration="2500000" />
+      <workItem from="1661238487586" duration="230000" />
+      <workItem from="1661243650109" duration="10700000" />
+      <workItem from="1661277565823" duration="35884000" />
+      <workItem from="1661427694920" duration="7756000" />
+      <workItem from="1661448441296" duration="8106000" />
+      <workItem from="1661460518134" duration="178000" />
+      <workItem from="1661519509083" duration="29508000" />
+      <workItem from="1661562102285" duration="16141000" />
+      <workItem from="1661634148333" duration="1735000" />
+      <workItem from="1661637276387" duration="278000" />
+      <workItem from="1661637612580" duration="477000" />
+      <workItem from="1661638877660" duration="410000" />
+      <workItem from="1661646956290" duration="1861000" />
+      <workItem from="1661650889774" duration="220000" />
+      <workItem from="1661702368264" duration="72000" />
+      <workItem from="1661744415685" duration="1827000" />
+      <workItem from="1661750013470" duration="940000" />
+      <workItem from="1661918227861" duration="4327000" />
+      <workItem from="1661923011427" duration="3503000" />
+      <workItem from="1661976670611" duration="4000" />
+      <workItem from="1662170109971" duration="607000" />
+      <workItem from="1662384441674" duration="11312000" />
+      <workItem from="1662410179918" duration="314000" />
+      <workItem from="1662515905843" duration="1413000" />
+      <workItem from="1662521300974" duration="1899000" />
+      <workItem from="1662531204311" duration="272000" />
+      <workItem from="1662559352785" duration="55000" />
+      <workItem from="1662564400395" duration="6383000" />
+      <workItem from="1662608257794" duration="2090000" />
+      <workItem from="1662611405971" duration="35000" />
+      <workItem from="1662611447418" duration="15000" />
+      <workItem from="1662611473216" duration="1633000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

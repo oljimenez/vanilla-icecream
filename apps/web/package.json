@@ -1,0 +1,35 @@
+{
+  "name": "example",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.2.0",
+    "polished": "^4.2.2",
+    "react": "^18.2.0",
+    "react-dom": "18.2.0",
+    "tls": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "@types/node": "18.0.1",
+    "@types/react": "18.0.14",
+    "@vanilla-extract/babel-plugin": "^1.1.7",
+    "@vanilla-extract/css": "^1.7.2",
+    "@vanilla-extract/css-utils": "^0.1.2",
+    "@vanilla-extract/dynamic": "^2.0.2",
+    "@vanilla-extract/next-plugin": "^2.0.2",
+    "@vanilla-extract/recipes": "^0.2.5",
+    "@vanilla-extract/sprinkles": "^1.4.1",
+    "eslint": "8.19.0",
+    "eslint-config-next": "12.2.0",
+    "prettier": "^2.7.1",
+    "ts-toolbelt": "^9.6.0",
+    "typescript": "4.7.4"
+  }
+}

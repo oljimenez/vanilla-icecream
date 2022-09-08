@@ -1,33 +1,24 @@
 {
-  "name": "nextjs-kit",
+  "name": "raid-monorepo",
+  "version": "0.0.0",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "package/*"
+  ],
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "12.2.0",
-    "polished": "^4.2.2",
-    "react": "^18.2.0",
-    "react-dom": "18.2.0",
-    "tls": "^0.0.1"
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.182",
-    "@types/node": "18.0.1",
-    "@types/react": "18.0.14",
-    "@vanilla-extract/babel-plugin": "^1.1.7",
-    "@vanilla-extract/css": "^1.7.2",
-    "@vanilla-extract/css-utils": "^0.1.2",
-    "@vanilla-extract/next-plugin": "^2.0.2",
-    "@vanilla-extract/recipes": "^0.2.5",
-    "@vanilla-extract/sprinkles": "^1.4.1",
-    "eslint": "8.19.0",
-    "eslint-config-next": "12.2.0",
-    "prettier": "^2.7.1",
-    "ts-toolbelt": "^9.6.0",
-    "typescript": "4.7.4"
-  }
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "packageManager": "yarn@1.22.19"
 }

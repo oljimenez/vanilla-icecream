@@ -3,14 +3,13 @@ import { Button } from 'components/interaction';
 import { Flex, VStack } from 'components/layout';
 import { Text } from 'components/text/Text';
 import { Heading } from 'components/text';
-import { Box } from 'components/layout/box';
 
 const Home: NextPage = () => {
     return (
         <VStack flexPlaceItems={'center'} itemSize={'fullViewport'} gap={'md'}>
             <Heading as={'h1'}>Build with Vanilla Kit</Heading>
             <VStack flexPlaceItems={'center'}>
-                <Text color={'black'}>Flexbox</Text>
+                <Text color={'error.200'}>Flexbox</Text>
                 <Flex
                     background={'neutral.900'}
                     display={'grid'}
