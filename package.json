@@ -1,5 +1,5 @@
 {
-  "name": "raid-monorepo",
+  "name": "vanilla-cone-monorepo",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
