@@ -1,37 +1,31 @@
 {
-  "name": "vanilla-cone-monorepo",
-  "version": "0.0.0",
-  "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "name": "vanilla-icecream",
+  "version": "0.2.0",
+  "description": "A utility library for vanilla-extract",
+  "main": "dist/vanilla-icecream.cjs.js",
+  "module": "dist/vanilla-icecream.esm.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "dev": "preconstruct dev",
-    "build": "preconstruct build",
-    "watch": "preconstruct watch",
-    "postinstall": "preconstruct dev",
-    "turbo:build": "turbo run build",
-    "turbo:dev": "turbo run dev --parallel",
-    "turbo:lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [
+    "vanilla-extract",
+    "react",
+    "utils"
+  ],
+  "author": "Oscar Luis Jiménez oljimenez.prog@gmail.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oljimenez/vanilla-icecream"
   },
   "devDependencies": {
-    "prettier": "latest",
-    "turbo": "latest"
-  },
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "packageManager": "yarn@1.22.19",
-  "dependencies": {
-    "@babel/core": "^7.19.0",
-    "@babel/preset-env": "^7.19.0",
-    "@preconstruct/cli": "^2.2.1"
-  },
-  "preconstruct": {
-    "packages": [
-      "packages/*"
-    ]
+    "@types/react": "^18.0.18",
+    "@vanilla-extract/css": "^1.7.3",
+    "@vanilla-extract/recipes": "^0.2.5",
+    "@vanilla-extract/sprinkles": "^1.4.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.2"
   }
 }

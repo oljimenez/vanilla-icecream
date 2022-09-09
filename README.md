@@ -1,18 +1,18 @@
-# 🍧 Vanilla Cone
+# 🍧 Vanilla IceCream
 
-# What is vanilla-cone?
+# What is vanilla-icecream?
 
 A utility library for 🧁[vanilla-extract][vanilla-extract].
-- [🍧 Vanilla Cone](#-vanilla-cone)
- - [How to Install](#how-to-install)
- - [Advanced Functions](#advanced-functions)
-  - [createComponentWithSprinkles](#createcomponentwithsprinklessprinkles)
- - [Utility Functions](#utility-functions )
-  - [createColors](#createcolors)
- - [API](#api)
-  - [createComponentWithSprinkles(sprinkles)](#--createcomponentwithsprinkles)
-  - [createColors(colorRecord)](#--createcolors)
- - [Thanks](#thanks)
+- [🍧 Vanilla IceCream](#-vanilla-icecream)
+- [How to Install](#how-to-install)
+- [Advanced Functions](#advanced-functions)
+- [createComponentWithSprinkles](#createcomponentwithsprinklessprinkles)
+- [Utility Functions](#utility-functions )
+- [createColors](#createcolors)
+- [API](#api)
+- [createComponentWithSprinkles(sprinkles)](#--createcomponentwithsprinkles)
+- [createColors(colorRecord)](#--createcolors)
+- [Thanks](#thanks)
 
 
 ## How to install?
@@ -20,11 +20,11 @@ A utility library for 🧁[vanilla-extract][vanilla-extract].
 Install the package:
 
 ```
-$ npm i vanilla-cake
+$ npm i vanilla-icecream
    #or
-$ yarn add vanilla-cake
+$ yarn add vanilla-icecream
    #or
-$ pnpm i vanilla-cake
+$ pnpm i vanilla-icecream
 ```
 > This package is dedicated to use with `react` and `vanilla-extract`. But in the future can be adapted to use with others framework.
 
@@ -79,8 +79,8 @@ This function allow you to create a component and adding all your `sprinkles` pr
 Step 1: Create a `.ts` file and use `createComponentWithSprinkles(sprinkles)`function to generate your magic function, let's call that function `createComponent` in the utils folder of our project for this example.
 
 ```ts
-// utils/createComponent.ts
-import { createComponentWithSprinkles } from 'vanilla-cone';
+// utils/createComponentWithSprinkles.ts
+import { createComponentWithSprinkles } from 'vanilla-icecream';
 import { sprinkles } from '../sprinkles.css';
 
 const createComponent = createComponentWithSprinkles(sprinkles);
@@ -185,7 +185,7 @@ Default of `vanilla-extract`
 ```.ts
 
 //colors.css.ts
-import { createColors } from 'vanilla-cone';
+import { createColors } from 'vanilla-icecream';
 
 export const colors = {
     white: '#FFF',
@@ -211,7 +211,7 @@ With `createColors` function
 ```.ts
 
 //colors.css.ts
-import { createColors } from 'vanilla-cone';
+import { createColors } from 'vanilla-icecream';
 
 export const colors = createColors({
     white: '#FFF',

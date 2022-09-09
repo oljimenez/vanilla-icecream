@@ -17,7 +17,7 @@ type Props<S, T, V extends VariantSelection<{}> | undefined = never> = Omit<
 type PropsType<T extends keyof JSX.IntrinsicElements> =
     JSX.IntrinsicElements[T];
 
-export const createComponentWithSprinkles = <S extends (...args: any) => any>(
+const createComponentWithSprinkles = <S extends (...args: any) => any>(
     sprinklesFn: S
 ) => {
     type Sprinkles = Parameters<typeof sprinklesFn>[0];
@@ -49,3 +49,5 @@ export const createComponentWithSprinkles = <S extends (...args: any) => any>(
         };
     };
 };
+
+export default createComponentWithSprinkles;

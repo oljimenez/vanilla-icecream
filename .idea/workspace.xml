@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="70433fea-469d-48b5-90d4-07f5553f4ecc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,11 +94,11 @@
       <recent name="C:\Users\Oscar Jiménez\WebstormProjects\nextjs-kit\src\components\text\Heading" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Oscar Jiménez\WebstormProjects\vanilla-cone\packages\lib\src" />
       <recent name="C:\Users\Oscar Jiménez\WebstormProjects\vanilla-cone\packages\lib" />
       <recent name="C:\Users\Oscar Jiménez\WebstormProjects\vanilla-cone\packages" />
       <recent name="C:\Users\Oscar Jiménez\WebstormProjects\vanilla-cone\apps\web" />
       <recent name="C:\Users\Oscar Jiménez\WebstormProjects\vanilla-cone\src" />
-      <recent name="C:\Users\Oscar Jiménez\WebstormProjects\nextjs-kit\src\components\text\Text" />
     </key>
   </component>
   <component name="RunManager">
@@ -218,7 +222,7 @@
       <workItem from="1662611473216" duration="2930000" />
       <workItem from="1662688621857" duration="33000" />
       <workItem from="1662688665434" duration="1479000" />
-      <workItem from="1662728657647" duration="714000" />
+      <workItem from="1662728657647" duration="5406000" />
     </task>
     <servers />
   </component>
