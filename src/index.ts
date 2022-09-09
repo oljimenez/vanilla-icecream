@@ -1,1 +1,1 @@
-export { createComponentWithSprinkles } from './createComponentWithSprinkles';
+export { createComponentWithSprinkles } from './create';

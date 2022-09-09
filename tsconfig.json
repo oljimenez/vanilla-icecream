@@ -4,11 +4,12 @@
     "target": "ES2015",
     "lib": ["ESNext"],
     "sourceMap": true,
-    "outDir": "./dist",
+    "outDir": "dist",
     "noImplicitAny": true,
     "declaration": true,
     "moduleResolution": "node",
-    "isolatedModules": true
+    "isolatedModules": true,
+    "baseUrl": "src"
   },
   "include": [
     "src/**/*"
